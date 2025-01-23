@@ -5,7 +5,7 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 0px;
-    gap: 60px;
+    gap: 40px;
 
     min-height: 200px;
 }
@@ -13,7 +13,8 @@ header {
 @media (max-width: 840px) {
     header {
         padding: 0 20px;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 
@@ -29,7 +30,7 @@ header {
 }
 
 .header-logo img {
-    transition: 0.5s;
+    transition: transform 0.5s;
     user-select: none;
 }
 .header-logo img:hover {
@@ -43,10 +44,6 @@ header {
 
 /* 3: Socials part */
 .header-soc {
-    /* Outer flex */
-    flex-basis: 10px;
-
-    /* Inner flex */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -57,6 +54,12 @@ header {
     flex-shrink: 0;
 
     user-select: none;
+    flex-basis: 60px;
+}
+@media (max-width: 840px) {
+    .header-soc {
+        flex-basis: auto;
+    }
 }
 
 .header-soc-item {

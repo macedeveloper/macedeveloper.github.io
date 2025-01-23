@@ -11,13 +11,17 @@
 }
 
 * {
-    border-radius: 20px;
     font-family: "Nunito Sans", sans-serif;
     scrollbar-color: #d4d6fb #151726;
 }
 p, li, button {
     color: var(--text);
     font-size: 24px;
+}
+@media (max-width: 840px) {
+    p, li, button {
+        font-size: 18px;
+    }
 }
 p, ul {
     margin: 0.5em 0;
@@ -115,7 +119,6 @@ h3:first-child {
 
 h1 {
     font-size: 64px;
-
 }
 
 h2 {

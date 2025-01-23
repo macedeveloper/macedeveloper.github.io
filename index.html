@@ -11,7 +11,8 @@
 
     <!-- <meta name="description" content="Hello! I'm Ilya, passionate about game development, music, and art. Here, you can check out my favorite projects, like The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain, and Dynamic Force. Let's create together! I've been sharing my adventures here since 2018."> -->
 
-    <meta name="description" content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством. На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force. Давайте будем творить вместе! Я делюсь своим опытом здесь с 2018 года.">
+    <meta name="description"
+        content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством. На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force. Давайте будем творить вместе! Я делюсь своим опытом здесь с 2018 года.">
 
     <meta name="keywords" content="Mace Dev, MaceDev, Ilya Bulava, Илья Булава, Mace Studios">
     <link rel="icon" href="/assets/logo/IconWeb.png" type="image/png">
@@ -21,7 +22,8 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mace Dev">
     <meta property="og:title" content="Mace Dev ∙ Разработчик">
-    <meta property="og:description" content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством. На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force. Давайте будем творить вместе! Я делюсь своим опытом здесь с 2018 года.">
+    <meta property="og:description"
+        content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством. На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force. Давайте будем творить вместе! Я делюсь своим опытом здесь с 2018 года.">
     <meta property="og:image" content="assets/logo/IconCircle.svg">
     <meta content="#4951FF" data-react-helmet="true" name="theme-color">
 
@@ -306,7 +308,7 @@
                             <h3 id="Game-Dem-Name"> Редактор Демотиваторов </h3>
                             <p class="half-opacity" id="Game-Dem-Desc"> Небольшой сайт для быстрого создания
                                 демотиваторов </p>
-                            <a href="https://macestudios.ru/mem" target="_blank"><button class="btn color-gray"> <i
+                            <a href="https://macestudios.ru/mem" target="_blank"><button class="btn"> <i
                                         class="bi bi-box-arrow-up-right"></i> Открыть </button></a>
                         </div>
                     </descriptive-project>
@@ -318,7 +320,7 @@
                         <div class="name">
                             <h3 id="Game-Cards-Name">Карточки</h3>
                             <p class="half-opacity" id="Game-Cards-Desc"> Карточки моих друзей и некоторых знакомых </p>
-                            <a href="https://macestudios.ru/zevki-cards" target="_blank"><button class="btn color-gray">
+                            <a href="https://macestudios.ru/zevki-cards" target="_blank"><button class="btn">
                                     <i class="bi bi-box-arrow-up-right"></i> Посмотреть </button></a>
                         </div>
                     </descriptive-project>
@@ -344,23 +346,39 @@
                 <!-- Yandex Music -->
                 <descriptive-project>
                     <div class="name">
-                        <h3> <i class="bi bi-music-note"></i> Mace Dev </h3>
+                        <h2> <i class="bi bi-music-note"></i> Mace Dev </h2>
                         <a href="https://youtube.com/playlist?list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ&si=zfmy6nsqEfc9VBo7"
-                            target="_blank"><button class="btn color-red"> <i class="bi bi-play-btn"></i>
+                            target="_blank"><button class="btn color-red"> <i class="bi bi-youtube"></i>
                                 Плейлист на YouTube </button></a>
                         <a href="https://music.yandex.ru/artist/23564859" target="_blank"><button
                                 class="btn color-yellow"> <i class="bi bi-play-circle"></i> Слушать на Яндекс
                                 Музыке </button></a>
                         <a href="https://vk.com/artist/macedev" target="_blank"><button class="btn color-blue">
                                 <i class="bi bi-soundwave"></i> Слушать в ВК</button></a>
+                        <a href="https://zvuk.com/artist/213163508" target="_blank"><button class="btn color-black">
+                                <i class="bi bi-broadcast"></i> Слушать в СберЗвуке</button></a>
+
                     </div>
                 </descriptive-project>
 
                 <!-- Title -->
                 <h1 style="margin-top: 0.5em;">Плейлист на YouTube</h1>
                 <!-- YouTube -->
+                <style>
+                    iframe.yt-embed {
+                        width: 640px;
+                        height: 360px;
+                    }
+
+                    @media (max-width: 840px) {
+                        iframe.yt-embed {
+                            width: 256px;
+                            height: 144px;
+                        }
+                    }
+                </style>
                 <div>
-                    <iframe width="560px" height="315px" class="embed"
+                    <iframe class="embed yt-embed"
                         src="https://www.youtube.com/embed/videoseries?si=als6LfhfIp0mg7ke&amp;list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -491,7 +509,7 @@
                     <li>
                         <i class="bi bi-envelope-at-fill"></i> <a title="E-mail" class="no-overflow"
                             href="mailto:i@macestudios.ru" target="_blank">Почта (i@macestudios.ru)</a>
-                        <i style="opacity: 50%;">(редко проверяю)</i>
+                        <i style="opacity: 50%;"> (Почту редко проверяю)</i>
                     </li>
                 </ul>
 

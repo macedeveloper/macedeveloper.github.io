@@ -1,0 +1,92 @@
+/* Tabs */
+.tabs {
+    /* Auto layout */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+}
+
+.tab {
+    background-color: var(--background);
+    border: none;
+    transition: background-color 0.1s;
+
+    min-height: 50px;
+    padding: 2px 20px;
+    user-select: none;
+    
+    display: flex;
+    flex-grow: 1;
+    /* flex-basis: 300px; */
+}
+.tab:hover {
+    background-color: var(--dark-bg);
+}
+.tab.active {
+    background-color: var(--primary);
+}
+.tab.active:hover {
+    background-color: var(--secondary);
+}
+
+.tab p {
+    margin: auto;
+}
+.tab.active p {
+    color: white;
+}
+
+
+
+
+
+/* Inside tabs */
+.intab {
+    display: none;
+}
+
+.intab.active {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+
+/* Flex divs presets */
+/*    ;''    */
+.flex-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*    ''''    */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}
+@media (max-width: 840px) {
+    .flex-row {
+        flex-wrap: wrap;
+    }
+}
+/*    :    */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

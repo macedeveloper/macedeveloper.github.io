@@ -1,274 +1,513 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
+    <!-- Main -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Setup -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Page info -->
+    <title>Mace Dev ∙ Разработчик</title>
 
-<!-- Page info -->
-<title>Mace Dev</title>
-<meta name="description" content="Mace Dev. My portfolio website">
-<meta name="keywords" content="Ilya Bulava, Илья Булава, Make meis maze, Mace Studios, Mace Dev, MaceDev">
-<link rel="icon" href="/assets/logo/IconWeb.png" type="image/png">
+    <!-- <meta name="description" content="Hello! I'm Ilya, passionate about game development, music, and art.
+     Here, you can check out my favorite projects, like The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain, and Dynamic Force.
+     Let's create together! I've been sharing my adventures here since 2018." /> -->
 
-<!-- Metadata -->
-<meta property="og:title" content="Mace Dev">
-<meta property="og:site_name" content="Mace Dev">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://macestudios.ru/">
-<meta property="og:image" content="assets/logo/IconCircle.svg">
-<meta property="og:description" content="Mace Dev. My portfolio website">
-<meta content="#4951FF" data-react-helmet="true" name="theme-color">
+    <meta name="description" content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством.
+        На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force.
+        Давайте будем творить вместе! Я делюсь своим опытом здесь с 2018 года." />
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap" rel="stylesheet">
+    <meta name="keywords" content="Mace Dev, MaceDev, Ilya Bulava, Илья Булава, Mace Studios">
+    <link rel="icon" href="/assets/logo/IconWeb.png" type="image/png">
 
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Metadata -->
+    <meta property="og:title" content="Mace Dev ∙ Разработчик">
+    <meta property="og:site_name" content="Mace Dev">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://macestudios.ru/">
+    <meta property="og:image" content="assets/logo/IconCircle.svg">
+    <meta content="#4951FF" data-react-helmet="true" name="theme-color">
 
-<!-- Connect Style -->
-<link rel="stylesheet" href="/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&amp;display=swap"
+        rel="stylesheet">
 
-<!-- Scripts -->
-<script src="/script.js"></script>
-<script src="https://unpkg.com/i18next@21.6.5/dist/umd/i18next.min.js"></script>
-<script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
-<script src="/language.js" defer></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/descriptive-project.css">
+    <link rel="stylesheet" href="css/buttons.css">
+
+    <!-- Scripts -->
+    <script src="/script.js"></script>
 </head>
+
 <body>
 
+    <!-- 
 
-<!-- Header -->
-<header>
-  <!-- Logo -->
-  <div class="header-logo">
-    <a class="header-logo-icon" href="https://macestudios.ru/">
-      <img src="assets/logo/IconCircle.svg" height="100px">
-    </a>
-    <h1 class="header-logo-text">Mace Dev</h1>
-  </div>
-  <!-- Socials -->
-  <div class="header-socials">
-    <a class="header-item" href="https://www.youtube.com/@macedev" target="_blank" >
-      <img src="assets/branding/yt-logo.svg" title="YouTube">
-    </a>
-    <a class="header-item" href="https://vk.com/macedev" target="_blank">
-      <img src="assets/branding/vk-logo.svg" title="VKontakte">
-    </a>
-  </div>
-</header>
+    Сделать после релиза:
+    - Перевод на английский
 
+    -->
 
+    <div class="container">
+        <header>
+            <div class="header-logo">
+                <img src="https://macestudios.ru/assets/logo/IconCircle.svg" alt="Logo" height="200px">
+            </div>
 
+            <div class="header-info">
+                <h1>Mace Dev</h1>
+                <p> Привет! </p>
+                <p> Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством.
+                    На этом сайте вы можете познакомиться с моими любимыми проектами. </p>
+                <p> Делюсь своим опытом с 2018 года. Давайте будем творить вместе! </p>
+            </div>
 
-
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-item">
-    <h1 id="Hero-Heading" style="text-align: left;">Привет!</h1>
-    <p id="Hero-Desc">Меня зовут Илья Булава и я...<br></p>
-  </div>
-  <img class="hero-item hero-image" src="assets/HeroEverything.png">
-</section>
-
-
-
-<!-- My Projects -->
-<section>
-  <h1 id="Section-Projects">Мои проекты</h1>
-</section>
-
-<section class="projects">
-  <!-- The Ultimate Contest -->
-  <a href="https://bulava.itch.io/tuc" target="_blank">
-    <div class="projects-item" style="background-image: url(assets/MyProjects/TucIcon.png);" title="The Ultimate Contest on itch.io"></div>
-  </a>
-  <!-- PcBoy 5 -->
-  <a href="https://bulava.itch.io/pcboy5" target="_blank">
-    <div class="projects-item" style="background-image: url(assets/MyProjects/PcBoy5Icon.png);" title="PcBoy 5 on itch.io"></div>
-  </a>
-  <!-- PcBoy800 4 -->
-  <a href="https://bulava.itch.io/pcboy2024" target="_blank">
-    <div class="projects-item" style="background-image: url(assets/MyProjects/PcBoy4Icon.png);" title="PcBoy 2024 on itch.io"></div>
-  </a>
-</section>
-
-<!-- My Projects 2 -->
-<section class="Section-OtherProjects">
-
-  <!-- $Copy example -->
-  <!-- <descriptive-project>
-    <img src="$image" class="descriptive-project-icon">
-    <div class="name">
-      <p>$Game name</p>
-      <p class="half-opacity">$Description</p>
-      <a href="$link" target="_blank"><button>$Play on itch.io</button></a>
-    </div>
-  </descriptive-project> -->
-
-  <!-- Cookie Ungain -->
-  <descriptive-project>
-    <img src="assets/MyProjects/СUgIcon.png" class="descriptive-project-icon">
-    <div class="name">
-      <p>Cookie Ungain</p>
-      <p class="half-opacity" id="Game-CUG-Desc">A two-player local vs game, where one player controls the keyboard and tries to collect cookies in a time limit, while the other player uses the mouse to stop them. (Game is in early demo)</p>
-      <a href="https://bulava.itch.io/cookie-ungain" target="_blank"><button class="color-orange"> <i class="bi bi-controller"></i> Play on itch.io</button></a>
-    </div>
-  </descriptive-project>
-
-
-  <!-- Dynamic Force --> 
-  <descriptive-project>
-    <img src="assets/MyProjects/DfIcon.png" class="descriptive-project-icon">
-    <div class="name">
-      <p>Dynamic Force</p>
-      <p class="half-opacity" id="Game-DF-Desc">Top-down multiplayer racing game</p>
-      <a href="https://www.newgrounds.com/portal/view/885110" target="_blank"><button> <i class="bi bi-globe2"></i> Play on newgrounds </button></a> <br>
-      <a href="https://drive.google.com/uc?export=download&id=1EuqeheZdKDTZlt2oRSrwHc7cnBfu4h0P" target="_blank"><button class="color-green"> <i class="bi bi-android"></i> Android (.apk) </button></a>
-      <a href="https://apps.rustore.ru/app/com.macestudios.dynamicforce" target="_blank"><button class="color-green"> <i class="bi bi-android" target="_blank"></i> Android (RuStore) </button></a>
-    </div>
-  </descriptive-project>
-
-  <!-- NEW Shooter.net --> 
-  <descriptive-project>
-    <img src="assets/MyProjects/NSNIcon.png" class="descriptive-project-icon">
-    <div class="name">
-      <p>New Shooter.net</p>
-      <p class="half-opacity" id="Game-NSN-Desc"> FPS retro-styled horror (Unfinished) </p>
-      <a href="https://drive.google.com/uc?export=download&id=1-21wR_GS9rXESeX8DGmfAe9hDKWOzfYj" target="_blank">
-        <button> <i class="bi bi-download"></i> Download </button>
-      </a>
-    </div>
-  </descriptive-project>
+            <div class="header-soc">
+                <a class="header-soc-item" href="https://www.youtube.com/@macedev" target="_blank">
+                    <img src="assets/branding/yt-logo.svg" title="Канал на YouTube">
+                </a>
+                <a class="header-soc-item" href="https://vk.com/macedev" target="_blank">
+                    <img src="assets/branding/vk-logo.svg" title="Группа ВКонтакте">
+                </a>
+                <a class="header-soc-item" href="https://t.me/macedev" target="_blank">
+                    <img src="assets/branding/tg-logo.svg" title="Телеграм канал">
+                </a>
+                <!-- <a class="header-soc-item" href="https://discordapp.com/users/885172882727133205" target="_blank">
+                    <img src="assets/branding/ds-logo.svg" title="Аккаунт в Discord">
+                </a> -->
+            </div>
+        </header>
 
 
 
-  <!-- Demotivator Maker -->
-  <descriptive-project style="flex-basis: 500px;">
-    <img src="assets/MyProjects/dem-icon.svg" class="descriptive-project-icon">
-    <div class="name">
-      <p id="Game-Dem-Name">Demotivational Poster Maker</p>
-      <p class="half-opacity" id="Game-Dem-Desc">Simple small tool for quick creation of demotivational posters</p>
-      <a href="https://macestudios.ru/mem" target="_blank"><button class="color-gray"> <i class="bi bi-box-arrow-up-right"></i> Open app </button></a>
-    </div>
-  </descriptive-project>
-
-  <!-- Zevki-cards -->
-  <descriptive-project style="flex-basis: 500px;">
-    <img src="https://macestudios.ru/zevki-cards/cards/CardTemplate.svg" class="descriptive-project-icon">
-    <div class="name">
-      <p id="Game-Cards-Name">Cards</p>
-      <p class="half-opacity" id="Game-Cards-Desc">The cards of my friends and other people I know</p>
-      <a href="https://macestudios.ru/zevki-cards" target="_blank"><button class="color-gray"> <i class="bi bi-box-arrow-up-right"></i> View </button></a>
-    </div>
-  </descriptive-project>
-  
-</section>
+        <div class="content-outer">
 
 
 
-<!-- Music -->
-<section>
-  <h1 id="Section-Music">Моя музыка</h1>
-  <!-- <p style="text-align: center;">(Весь плейлист)</p> -->
-</section>
-
-<section style="text-align: center;">
-  <iframe width="560px" height="315px" class="embed" src="https://www.youtube.com/embed/videoseries?si=als6LfhfIp0mg7ke&amp;list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ"
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
-
-
-<!-- Old Projects -->
-<section>
-  <h1 id="Section-OtherProjects-Old">Старые проекты</h1>
-  <p class="half-opacity" style="text-align: center; margin: 0;" id="Old-Proj-Warn">(They are really old and i am not responsible for the quality)</p>
-  <p style="text-align: center; margin-top: 0;"><button id="Old-Proj-ToggleButton"> <i class="bi bi-eye"></i> Show them anyway </button></p>
-</section>
-
-<section class="Section-OtherProjects" id="Old-Proj-Section">
-  <!-- YNPN -->
-  <descriptive-project>
-    <img src="assets/MyProjects/YNPNMiniIcon.png" class="descriptive-project-icon">
-    <div class="name">
-      <p>Y.N.P.N.</p>
-      <p class="half-opacity">Multiplayer Race/Sandbox game. Prequel for "The Ultimate Contest"</p>
-      <a href="https://www.newgrounds.com/portal/view/827334" target="_blank"><button> <i class="bi bi-tools"></i> Remake (Sandbox mode)</button></a>
-      <a href="https://www.newgrounds.com/portal/view/817571" target="_blank"><button  class="color-gray"> Old version (Race mode)</button></a>
-    </div>
-  </descriptive-project>
-
-  <!-- <img src="assets/MyProjects/PcBoy13Icon.png" class="other-projs-mini-icon"> PcBoy800:
-  <a href="https://drive.google.com/file/d/10Mxt2kyxyVcHkpuv7CwjxuIlvU53_eZO/view?usp=sharing" target="_blank">[Download latest]<icon-gdrive></a>
-  <a href="https://drive.google.com/drive/folders/1fTLi7MZM4nfI44eMABPnjWBG6iKona2u?usp=sharing" target="_blank">[Old versions]<icon-gdrive></a>
-  <a href="https://www.newgrounds.com/portal/view/825265" target="_blank">[Play remake online]</a>
-  <br> -->
-
-  <!-- PcBoy800 2 -->
-  <descriptive-project>
-    <img src="assets/MyProjects/PcBoy8002Icon.png" class="descriptive-project-icon">
-    <div class="name">
-      <p>PcBoy800 2</p>
-      <a href="https://drive.google.com/file/d/1IZvzY6OzTdHk5GYuXTJpmEedrRwQoY8x/view?usp=sharing" target="_blank">
-        <button> <i class="bi bi-download"></i> Download latest </button></a>
-      <a href="https://drive.google.com/drive/folders/1hrnn6_-eGHiJinF4nHURMGhJfc2Gtlbi?usp=sharing" target="_blank">
-        <button class="color-gray"> Old versions </button></a>
-    </div>
-  </descriptive-project>
-
-  <!-- PcBoy X -->
-  <descriptive-project>
-    <img src="assets/MyProjects/PcBoyTiny.png" class="descriptive-project-icon">
-    <div class="name">
-      <p>PcBoy X</p>
-      <a href="https://www.newgrounds.com/portal/view/820950" target="_blank"><button> <i class="bi bi-globe2"></i> Play on Newgrounds </button></a>
-    </div>
-  </descriptive-project>
-
-</section>
-
-<!-- Hidable Section Script -->
-<script>
-  const button = document.getElementById('Old-Proj-ToggleButton');
-  const section = document.getElementById('Old-Proj-Section');
-
-  button.onclick = function() {
-      if (section.style.maxHeight) {
-        section.style.maxHeight = null;
-        button.classList.remove('color-red');
-        setElementText('Old-Proj-ToggleButton', '<i class="bi bi-eye"></i> ' + i18next.t('Old Proj ToggleButton Show'), true);
-        // button.innerHTML = '<i class="bi bi-eye"></i> Show'; // Update button text
-      } else {
-        section.style.maxHeight = section.scrollHeight + "px"; // Set max-height to scrollHeight
-        button.classList.add('color-red');
-        setElementText('Old-Proj-ToggleButton', '<i class="bi bi-x-circle"></i> ' + i18next.t('Old Proj ToggleButton Hide'), true);
-        // button.inner = '<i class="bi bi-x-circle"></i> Hide'; // Update button text
-      }
-  };
-</script>
+            <div class="tabs">
+                <!-- <button class="tab" id="tab-main">
+                    <p>
+                        <i class="bi bi-house-door"></i> Главная
+                    </p>
+                </button> -->
+                <button class="tab" id="tab-games">
+                    <p>
+                        <i class="bi bi-controller"></i> Я делаю игры
+                    </p>
+                </button>
+                <button class="tab" id="tab-projects">
+                    <p>
+                        <i class="bi bi-archive"></i> Мои мини-проекты
+                    </p>
+                </button>
+                <button class="tab" id="tab-arts">
+                    <p>
+                        <i class="bi bi-palette"></i> Я умею рисовать
+                    </p>
+                </button>
+                <button class="tab" id="tab-music">
+                    <p>
+                        <i class="bi bi-music-note-beamed"></i> Я пишу музыку
+                    </p>
+                </button>
+                <button class="tab" id="tab-trivia">
+                    <p>
+                        <i class="bi bi-question-circle"></i> Факты обо мне
+                    </p>
+                </button>
+                <button class="tab" id="tab-contact">
+                    <p>
+                        <i class="bi bi-chat-dots"></i> Как мне написать?
+                    </p>
+                </button>
+            </div>
 
 
 
-<!-- Footer -->
-<footer>
-  <div class="footer-div">
-    <h1 id="Section-Contact">Связаться со мной</h1>
-      <img src="assets/branding/bi-vk.svg" class="bi bi-custom-icon custom-icon" draggable="false"> <a title="VKontakte" class="no-overflow" href="https://vk.com/mace_dev" target="_blank">vk.com/mace_dev</a><br>
-      <i class="bi bi-telegram"></i> <a title="Telegram" class="no-overflow" href="https://t.me/mace_dev" target="_blank">t.me/mace_dev</a><br>
-      <i class="bi bi-discord"></i> <a title="Discord" class="no-overflow" href="https://discordapp.com/users/885172882727133205" target="_blank">discord (@mace_dev)</a><br>
-      <!-- <i class="bi bi-tiktok"></i> <a title="TikTok" class="no-overflow" href="https://www.tiktok.com/@macestudiosgames" target="_blank">tiktok.com/@macestudiosgames</a><br> -->
-      <!-- <i class="bi bi-envelope-at-fill"></i> <a title="Mail" class="no-overflow" href="mailto:bulava.place@gmail.com" target="_blank">bulava.place@gmail.com</a><br> -->
-      <i class="bi bi-envelope-at-fill"></i> <a title="E-mail" class="no-overflow" href="mailto:i@macestudios.ru" target="_blank">i@macestudios.ru</a><br>
-      <p id="Footer-Copyright"> <i class="bi bi-c-circle"></i> 2018-2038 Mace Dev (ранее: Mace Studios). Все права защищены. </p>
-  </div>
-</footer>
+            <div class="intab" id="intab-main">
+                <div class="flex-col">
+                    <!-- <h2>Главная</h2> -->
+                    <div class="flex-row" style="flex-grow: 1;">
+                        <img src="assets/HeroEverything.png" height="200px">
+                        <img src="assets/HeroEverything.png" height="200px">
+                    </div>
+                </div>
+
+            </div>
 
 
+
+            <div class="intab active" id="intab-games">
+                <!-- Header -->
+                <h1>Мои игровые проекты</h1>
+                <div class="flex-rows">
+                    <!-- The Ultimate Contest -->
+                    <descriptive-project>
+                        <img src="assets/projects/TucIcon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>The Ultimate Contest (TUC)</h3>
+                            <p class="half-opacity">Многопользовательские соревнования! <br> Четыре игровых режима:
+                                Гонка,
+                                Бойня, Охота за шляпой и прятки</p>
+                            <!-- Multiplayer competition! Four game modes: Race, Slasher, Hide and Seek, and Hat Hunt -->
+                            <a href="https://bulava.itch.io/tuc" target="_blank"><button class="btn color-pink"> <i
+                                        class="bi bi-controller"></i> Играть на itch.io </button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <!-- PcBoy 5 -->
+                    <descriptive-project>
+                        <img src="assets/projects/PcBoy5Icon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>PcBoy 5</h3>
+                            <p class="half-opacity">Экшен-платформер. <br> Графика и музыка в стиле игр 90-х годов
+                                (16-бит)
+                            </p>
+                            <!-- <p class="half-opacity">Action platformer. Graphics and music in the style of the 90's games (16-bit). 8 levels to play</p> -->
+                            <a href="https://bulava.itch.io/pcboy5" target="_blank"><button class="btn color-green"> <i
+                                        class="bi bi-download"></i> Скачать из itch.io </button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <!-- PcBoy800 4 -->
+                    <descriptive-project>
+                        <img src="assets/projects/PcBoy4Icon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>PcBoy800 4 (PcBoy 2024)</h3>
+                            <p class="half-opacity">PcBoy800 4 Обновлён в 2024! 16-битный платформер</p>
+                            <!-- <p class="half-opacity">PcBoy800 4 Updated in 2024! 16-bit action platformer</p> -->
+                            <a href="https://bulava.itch.io/pcboy2024" target="_blank"><button class="btn color-pink">
+                                    <i class="bi bi-controller"></i> Играть на itch.io </button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <!-- Cookie Ungain -->
+                    <descriptive-project>
+                        <img src="assets/projects/СUgIcon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>Cookie Ungain</h3>
+                            <p class="half-opacity" id="Game-CUG-Desc">Локальная vs игра для двух игроков, в которой
+                                один игрок управляет клавиатурой <i class="bi bi-keyboard"></i> и пытается собрать
+                                печеньки до конца таймера, а
+                                другой игрок использует мышь <i class="bi bi-mouse"></i>, чтобы помешать ему. (Игра в
+                                ранней демо-версии)
+                            </p>
+                            <!-- <p class="half-opacity" id="Game-CUG-Desc">A two-player local vs game, where one player
+                                controls the keyboard and tries to collect cookies in a time limit, while the other
+                                player uses the mouse to stop them. (Game is in early demo)</p> -->
+                            <a href="https://bulava.itch.io/cookie-ungain" target="_blank"><button
+                                    class="btn color-pink">
+                                    <i class="bi bi-controller"></i> Играть на itch.io</button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <br>
+
+                    <!-- Dynamic Force -->
+                    <descriptive-project>
+                        <img src="assets/projects/DfIcon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>Dynamic Force</h3>
+                            <p class="half-opacity" id="Game-DF-Desc">Мультиплеерные гоночки, вид сверху</p>
+                            <!-- <p class="half-opacity" id="Game-DF-Desc">Top-down multiplayer racing game</p> -->
+                            <a href="https://www.newgrounds.com/portal/view/885110" target="_blank"><button
+                                    class="btn color-orange">
+                                    <i class="bi bi-controller"></i> Играть на Newgrounds </button></a>
+
+                            <a href="https://drive.google.com/uc?export=download&id=1EuqeheZdKDTZlt2oRSrwHc7cnBfu4h0P"
+                                target="_blank"><button class="btn color-green"> <i class="bi bi-android"></i>
+                                    Скачать на Android (.apk) </button></a>
+                            <a href="https://apps.rustore.ru/app/com.macestudios.dynamicforce" target="_blank"><button
+                                    class="btn color-blue"> <i class="bi bi-front" target="_blank"></i> Скачать из
+                                    RuStore
+                                </button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <!-- NEW Shooter.net -->
+                    <descriptive-project>
+                        <img src="assets/projects/NSNIcon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>New Shooter.net</h3>
+                            <p class="half-opacity" id="Game-NSN-Desc"> Ретро хоррор шутер от 1-го лица (Игра-недоделыш)
+                            </p>
+                            <!-- <p class="half-opacity" id="Game-NSN-Desc"> FPS retro-styled horror (Unfinished) </p> -->
+                            <a href="https://drive.google.com/uc?export=download&id=1-21wR_GS9rXESeX8DGmfAe9hDKWOzfYj"
+                                target="_blank">
+                                <button class="btn color-green"> <i class="bi bi-download"></i> Скачать (Windows)
+                                </button>
+                            </a>
+                        </div>
+                    </descriptive-project>
+                </div>
+
+                <!-- Header -->
+                <h1>Старые игры</h1>
+                <div class="flex-rows">
+                    <!-- YNPN -->
+                    <descriptive-project>
+                        <img src="assets/projects/YNPNMiniIcon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>Y.N.P.N.</h3>
+                            <p class="half-opacity">Multiplayer Race/Sandbox game. Prequel for "The Ultimate
+                                Contest"</p>
+                            <a href="https://www.newgrounds.com/portal/view/827334" target="_blank"><button class="btn">
+                                    <i class="bi bi-tools"></i> Remake (Sandbox mode)</button></a>
+                            <a href="https://www.newgrounds.com/portal/view/817571" target="_blank"><button
+                                    class="btn color-gray"> Old version (Race mode)</button></a>
+                        </div>
+                    </descriptive-project>
+
+
+                    <!-- PcBoy800 2 -->
+                    <descriptive-project>
+                        <img src="assets/projects/PcBoy8002Icon.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>PcBoy800 2</h3>
+                            <a href="https://drive.google.com/file/d/1IZvzY6OzTdHk5GYuXTJpmEedrRwQoY8x/view?usp=sharing"
+                                target="_blank">
+                                <button class="btn"> <i class="bi bi-download"></i> Download latest </button></a>
+                            <a href="https://drive.google.com/drive/folders/1hrnn6_-eGHiJinF4nHURMGhJfc2Gtlbi?usp=sharing"
+                                target="_blank">
+                                <button class="btn color-gray"> Old versions </button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <!-- PcBoy X -->
+                    <descriptive-project>
+                        <img src="assets/projects/PcBoyTiny.png" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3>PcBoy X</h3>
+                            <a href="https://www.newgrounds.com/portal/view/820950" target="_blank"><button class="btn">
+                                    <i class="bi bi-globe2"></i> Play on Newgrounds </button></a>
+                        </div>
+                    </descriptive-project>
+                </div>
+            </div>
+
+
+
+            <div class="intab" id="intab-projects">
+                <!-- Header -->
+                <h1>Мои проекты</h1>
+
+                <div class="flex-rows">
+                    <!-- Demotivator Maker -->
+                    <descriptive-project>
+                        <img src="assets/projects/dem-icon.svg" class="descriptive-project-icon">
+                        <div class="name">
+                            <h3 id="Game-Dem-Name"> Редактор Демотиваторов </h3>
+                            <p class="half-opacity" id="Game-Dem-Desc"> Небольшой сайт для быстрого создания
+                                демотиваторов </p>
+                            <a href="https://macestudios.ru/mem" target="_blank"><button class="btn color-gray"> <i
+                                        class="bi bi-box-arrow-up-right"></i> Открыть </button></a>
+                        </div>
+                    </descriptive-project>
+
+                    <!-- Zevki-cards -->
+                    <descriptive-project>
+                        <img src="https://macestudios.ru/zevki-cards/cards/CardTemplate.svg"
+                            class="descriptive-project-icon">
+                        <div class="name">
+                            <h3 id="Game-Cards-Name">Карточки</h3>
+                            <p class="half-opacity" id="Game-Cards-Desc"> Карточки моих друзей и некоторых знакомых </p>
+                            <a href="https://macestudios.ru/zevki-cards" target="_blank"><button class="btn color-gray">
+                                    <i class="bi bi-box-arrow-up-right"></i> Посмотреть </button></a>
+                        </div>
+                    </descriptive-project>
+                </div>
+            </div>
+
+
+
+            <div class="intab" id="intab-arts">
+                <!-- Title -->
+                <h1>Рисунки</h1>
+                <a href="https://macestudios.ru/arts" target="_blank"><button class="btn">Ссылочка на страницу с
+                        рисунками</button></a>
+                <!-- <iframe src="https://macestudios.ru/arts" frameborder="0"></iframe> -->
+            </div>
+
+
+
+            <div class="intab" id="intab-music">
+
+                <!-- Title -->
+                <h1>Музыка</h1>
+                <!-- Yandex Music -->
+                <descriptive-project>
+                    <div class="name">
+                        <h3> <i class="bi bi-music-note"></i> Mace Dev </h3>
+                        <a href="https://youtube.com/playlist?list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ&si=zfmy6nsqEfc9VBo7"
+                            target="_blank"><button class="btn color-red"> <i class="bi bi-play-btn"></i>
+                                Плейлист на YouTube </button></a>
+                        <a href="https://music.yandex.ru/artist/23564859" target="_blank"><button
+                                class="btn color-yellow"> <i class="bi bi-play-circle"></i> Слушать на Яндекс
+                                Музыке </button></a>
+                        <a href="https://vk.com/artist/macedev" target="_blank"><button class="btn color-blue">
+                                <i class="bi bi-soundwave"></i> Слушать в ВК</button></a>
+                    </div>
+                </descriptive-project>
+
+                <!-- Title -->
+                <h1 style="margin-top: 0.5em;">Плейлист на YouTube</h1>
+                <!-- YouTube -->
+                <div>
+                    <iframe width="560px" height="315px" class="embed"
+                        src="https://www.youtube.com/embed/videoseries?si=als6LfhfIp0mg7ke&amp;list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+
+
+            <div class="intab" id="intab-trivia">
+                <!-- Title -->
+                <h1>Факты обо мне</h1>
+
+                <!-- FAQ -->
+                <!-- <h2>Ответы на вопросы</h2>
+                <p>
+                    <i class="bi bi-question-circle"></i> Вопрос: Вабадаба даб ис дат тру? <br>
+                    <i class="bi bi-chat-dots"></i> Ответ: Йе <br>
+                    <br>
+                    <i class="bi bi-question-circle"></i> Вопрос: Вабадаба даб ис дат тру? <br>
+                    <i class="bi bi-chat-dots"></i> Ответ: Йе <br>
+                    <br>
+                </p> -->
+
+                <!-- Fav. activities -->
+                <h2> <i class="bi bi-chat-heart"></i> Интересы </h2>
+                <ul>
+                    <li> <i class="bi bi-terminal"></i> Программирование </li>
+                    <li> <i class="bi bi-controller"></i> Разработка видеоигр </li>
+                    <li> <i class="bi bi-code-slash"></i> Веб-разработка </li>
+                    <li> <i class="bi bi-images"></i> Рисование </li>
+                    <li> <i class="bi bi-music-note-beamed"></i> Написание музыки </li>
+                    <li> <i class="bi bi-rocket-takeoff"></i> Анимация </li>
+                    <li> <i class="bi bi-journal-medical"></i> Психология </li>
+                </ul>
+
+                <!-- Random facts -->
+                <h2> <i class="bi bi-dice-5"></i> Случайные факты </h2>
+                <ul>
+                    <li> Я хожу в тренажёрный зал с Декабря 2024 </li>
+                    <li> У меня плохо получается придумывать случайные факты </li>
+                    <li>
+                        Любимые жанры музыки: EDM, Chiptune, VGM, House. <br>
+                        Есть
+                        <a href="https://youtube.com/playlist?list=PLax8LqpZxaCjwveG1fpjpExvkIiX8Zloz">
+                            мини-версия моего плейлиста</a>
+                        если кому-то интересно.
+                    </li>
+                </ul>
+
+                <!-- Fav. games -->
+                <h2> <i class="bi bi-controller"></i> Любимые игры </h2>
+                <ul>
+                    <li> <i class="bi bi-soundwave"></i> Sonic Mania </li>
+                    <li> <i class="bi bi-question-square"></i> New Super Mario Bros. Wii </li>
+                    <li> <i class="bi bi-coin"></i> ULTRAKILL </li>
+                    <li> <i class="bi bi-stop-circle"></i> Pizza Tower </li>
+                    <li> <i class="bi bi-globe-asia-australia"></i> Freedom Planet 2 </li>
+                    <li> <i class="bi bi-9-circle"></i> Geometry Dash </li>
+                    <li> <i class="bi bi-heart-pulse"></i> Rhythm Doctor </li>
+                    <li> <i class="bi bi-lightbulb"></i> OMORI </li>
+                    <li> <i class="bi bi-star"></i> Gimmick! 2 </li>
+                    <li> <i class="bi bi-box"></i> Minecraft </li>
+                    <li> <i class="bi bi-cup"></i> Cuphead </li>
+                    <li> <i class="bi bi-cursor"></i> Progress Bar 95 </li>
+                    <li> <i class="bi bi-arrow-through-heart"></i> (И, конечно, все мои собственные игры) </li>
+                </ul>
+
+                <!-- Fav. music -->
+                <!-- <h2> <i class="bi bi-music-note-beamed"></i> Любимая музыка </h2>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-btn"></i>
+                        <a href="https://youtube.com/playlist?list=PLax8LqpZxaCjwveG1fpjpExvkIiX8Zloz">[Мини-Плейлист]</a>
+                    </li>
+                </ul> -->
+
+                <!-- Trivia -->
+                <!-- <h3>Разное</h3>
+                <ul>
+                    <li>Любимое животное: Raccoon❌</li>
+                    <li>Любимая еда: Roasted potatoes❌</li>
+                    <li>Favourite ice cream flavour: Cookie Dough❌</li>
+                    <li>Pet peeve: Sparkling water❌</li>
+                    <li>An unusual fear: Automatic doors❌</li>
+                    <li>Something I collect: Colourful soda cans❌</li>
+                    <li>Superpower I wish I had: Reading minds</li>
+                    <li>The best gift I've ever received: Nintendo Switch❌</li>
+                </ul>
+                <p>
+                    (Первоначальная идея от: <a href="https://aid4r.neocities.org/" target="_blank">Айдар Ырысов</a>)
+                </p> -->
+
+            </div>
+
+
+
+            <div class="intab" id="intab-contact">
+                <h1 style="margin-bottom: 0;">Связаться со мной</h1>
+                <p style="margin: 0;">Мои личные аккаунты в разных соц. сетях:</p>
+
+                <ul style="font-size: 40px;">
+                    <li>
+                        <i class="bi bi-person-circle"></i> <a title="ВКонтакте" class="no-overflow"
+                            href="https://vk.com/mace_dev" target="_blank">ВКонтакте (@mace_dev)</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-telegram"></i> <a title="Telegram" class="no-overflow"
+                            href="https://t.me/mace_dev" target="_blank">Телеграм (@mace_dev)</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-discord"></i> <a title="Discord" class="no-overflow"
+                            href="https://discordapp.com/users/885172882727133205" target="_blank">Discord
+                            (@mace_dev)</a>
+                    </li>
+                    <!-- 
+                        <li>
+                            <i class="bi bi-tiktok"></i> <a title="TikTok" class="no-overflow"
+                                href="https://www.tiktok.com/@macestudiosgames"
+                                target="_blank">tiktok.com/@macestudiosgames</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-at-fill"></i> <a title="Mail" class="no-overflow"
+                                href="mailto:bulava.place@gmail.com" target="_blank">bulava.place@gmail.com</a>
+                        </li> -->
+
+                    <li>
+                        <i class="bi bi-envelope-at-fill"></i> <a title="E-mail" class="no-overflow"
+                            href="mailto:i@macestudios.ru" target="_blank">Почта (i@macestudios.ru)</a>
+                        <i style="opacity: 50%;">(редко проверяю)</i>
+                    </li>
+                </ul>
+
+                <p id="Footer-Copyright" style="opacity: 50%;"> <i class="bi bi-c-circle"></i> 2018-2038 Mace Dev
+                    (ранее: Mace
+                    Studios). Все права защищены. </p>
+            </div>
+
+
+
+        </div>
+
+        <script src="scripts/tabs.js"></script>
 
 </body>
+
 </html>

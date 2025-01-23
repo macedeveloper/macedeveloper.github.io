@@ -2,4 +2,4 @@
 
 Main: https://macestudios.ru/
 
-GitHub default link: https://maceplace.github.io/macedev
+Or: https://maceplace.github.io/

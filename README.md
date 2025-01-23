@@ -2,4 +2,4 @@
 
 Main: https://macestudios.ru/
 
-Or: https://maceplace.github.io/
+Or: https://macedeveloper.github.io/

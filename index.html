@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/descriptive-project.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/arts-section.css">
 
     <!-- Scripts -->
     <script src="/script.js"></script>
@@ -331,10 +332,52 @@
 
             <div class="intab" id="intab-arts" style="text-align: center;">
                 <!-- Title -->
-                <h1>Рисунки</h1>
-                <a href="https://macestudios.ru/arts" target="_blank"><button class="btn">Ссылочка на страницу с
-                        рисунками</button></a>
-                <!-- <iframe src="https://macestudios.ru/arts" frameborder="0"></iframe> -->
+                <h1>Мои рисунки</h1>
+
+                <!-- Images -->
+                <div class="image-container">
+                    <!-- New -->
+                    <div class="commented">
+                        <img src="assets/arts/dogformer.png" class="clickable-image">
+                        <p> #Концепт платформера, вдохновлённый игрой <b>Super Cat Tales</b></p>
+                    </div>
+                    <div class="commented">
+                        <img src="assets/arts/YNPN2map.png" class="clickable-image">
+                        <p> YNPN 2 - мультиплеер-песочница (#концепт) </p>
+                    </div>
+                    <div class="commented">
+                        <img src="assets/arts/CONFLICT.png" class="clickable-image">
+                        <p> Соревновательный шутер вид сверху - Пляжная локация (#концепт) </p>
+                    </div>
+                    <!-- Nice -->
+                    <div class="commented">
+                        <img src="assets/arts/PcBoyMTsnow.png" class="clickable-image">
+                        <p> Some PcBoy game - Snow level #концепт </p>
+                    </div>
+                    <div class="commented">
+                        <img src="assets/arts/sp-dc1.png" class="clickable-image">
+                        <p> Spotlight Dancer - 8-bit styled music platformer (unfinished project) #концепт </p>
+                    </div>
+                    <div class="commented">
+                        <img src="assets/arts/sp-dc2.png" class="clickable-image">
+                        <p> Spotlight Dancer - 2-й уровень #концепт </p>
+                    </div>
+                    <!-- Rest -->
+                    <div class="commented">
+                        <img src="assets/arts/firefighter.png" class="clickable-image">
+                        <p> Runner game #концепт.<br>Playing as a firefighter in a burning building </p>
+                    </div>
+                </div>
+
+                <!-- Modal for overlay -->
+                <div id="imageModal" class="modal">
+                    <span id="modal-close">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+
+                <script src="scripts/arts.js"></script>
+
+
             </div>
 
 
@@ -357,7 +400,8 @@
                                 <i class="bi bi-soundwave"></i> Слушать в ВК</button></a>
                         <a href="https://zvuk.com/artist/213163508" target="_blank"><button class="btn color-black">
                                 <i class="bi bi-broadcast"></i> Слушать в СберЗвуке</button></a>
-                        <a href="https://open.spotify.com/artist/3qpBKyXLiLtP4hakJy0mcA" target="_blank"><button class="btn color-teal">
+                        <a href="https://open.spotify.com/artist/3qpBKyXLiLtP4hakJy0mcA" target="_blank"><button
+                                class="btn color-teal">
                                 <i class="bi bi-spotify"></i> Слушать на Spotify</button></a>
 
                     </div>
@@ -391,7 +435,7 @@
 
 
 
-            <div class="intab" id="intab-trivia" >
+            <div class="intab" id="intab-trivia">
                 <!-- Title -->
                 <h1>Факты обо мне</h1>
 

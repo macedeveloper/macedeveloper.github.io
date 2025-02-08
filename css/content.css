@@ -28,6 +28,7 @@
 }
 .tab:hover {
     background-color: var(--dark-bg);
+    cursor: pointer;
 }
 .tab.active {
     background-color: var(--primary);

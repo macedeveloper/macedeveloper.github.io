@@ -1,5 +1,6 @@
 descriptive-project {
     display: flex;
+    align-items: center;
     margin: 0.5em;
     /* max-width: 1280px; */
     max-width: 100%;
@@ -24,8 +25,8 @@ descriptive-project div {
 
 descriptive-project img {
     margin: 20px;
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 170px;
     border-radius: 5px;
 }
 

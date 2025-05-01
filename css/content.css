@@ -18,6 +18,10 @@
     border-radius: 20px;
     transition: background-color 0.1s;
 
+    box-shadow: 0 0.2em var(--dark-bg);
+    transform: translateY(-0.2em);
+    transition: 0.1s;
+
     min-height: 50px;
     padding: 2px 20px;
     user-select: none;
@@ -29,9 +33,13 @@
 .tab:hover {
     background-color: var(--dark-bg);
     cursor: pointer;
+
+    box-shadow: 0 0 #0000;
+    transform: translateY(0);
 }
 .tab.active {
     background-color: var(--primary);
+    box-shadow: 0 0.2em var(--secondary);
 }
 .tab.active:hover {
     background-color: var(--secondary);
@@ -59,6 +67,7 @@
     flex-wrap: wrap;
     
     width: 100%;
+    gap: 40px;
     
     flex-grow: 1;
     flex-shrink: 1;
@@ -67,7 +76,7 @@
 
 
 /* Flex divs presets */
-/*    ;''    */
+/*    :''    */
 .flex-rows {
     display: flex;
     flex-direction: row;

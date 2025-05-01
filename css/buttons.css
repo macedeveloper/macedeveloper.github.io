@@ -38,8 +38,8 @@
 }
 
 
-/* Buttons */
-button.btn {
+/* .btns */
+.btn {
     background: var(--primary);
     box-shadow: 0 0.2em var(--secondary);
     transform: translateY(-0.2em);
@@ -47,6 +47,7 @@ button.btn {
     color: #fff;
     font-weight: 600;
 
+    display: inline-block;
     margin: 12px;
     padding: 10px 24px;
     border: none;
@@ -56,88 +57,88 @@ button.btn {
     text-decoration: none;
 }
 
-button.btn * {
+.btn * {
     color: white;
 }
 
-button.color-white *,
-button.color-yellow *,
-button.color-cyan * {
+.btn.color-white *,
+.btn.color-yellow *,
+.btn.color-cyan * {
     color: black;
 }
 
 /* Colors */
-button.color-white {
+.btn.color-white {
     background: white;
     color: black;
     box-shadow: 0 0.2em #bbb;
 }
 
-button.color-black {
+.btn.color-black {
     background: #111;
     color: white;
     box-shadow: 0 0.2em black;
 }
 
-button.color-red {
+.btn.color-red {
     background: var(--red);
     box-shadow: 0 0.2em var(--red-dark);
 }
 
-button.color-orange {
+.btn.color-orange {
     background: var(--orange);
     box-shadow: 0 0.2em var(--orange-dark);
 }
 
-button.color-yellow {
+.btn.color-yellow {
     background: var(--yellow);
     box-shadow: 0 0.2em var(--yellow-dark);
     color: black;
 }
 
-button.color-green {
+.btn.color-green {
     background: var(--green);
     box-shadow: 0 0.2em var(--green-dark);
 }
 
-button.color-teal {
+.btn.color-teal {
     background: var(--teal);
     box-shadow: 0 0.2em var(--teal-dark);
 }
 
-button.color-cyan {
+.btn.color-cyan {
     background: var(--cyan);
     box-shadow: 0 0.2em var(--cyan-dark);
 }
 
-button.color-blue {
+.btn.color-blue {
     background: var(--blue);
     box-shadow: 0 0.2em var(--blue-dark);
 }
 
-button.color-purple {
+.btn.color-purple {
     background: var(--purple);
     box-shadow: 0 0.2em var(--purple-dark);
 }
 
-button.color-pink {
+.btn.color-pink {
     background: var(--pink);
     box-shadow: 0 0.2em var(--pink-dark);
 }
 
-button.color-gray {
+.btn.color-gray {
     background: var(--bs-gray);
     box-shadow: 0 0.2em var(--bs-gray-dark);
 }
 
-button.btn:hover,
-button.btn:active {
+.btn:hover,
+.btn:active {
     box-shadow: 0 0 #0000;
     transform: translateY(0);
     cursor: pointer;
 }
 
-button.btn:disabled {
+.btn:disabled {
     background: #6e6f79;
     box-shadow: 0 0 #393847;
     transform: translateY(0);
@@ -145,13 +146,15 @@ button.btn:disabled {
     cursor: no-drop;
 }
 
-a button.btn {
+a .btn {
     user-select: none;
 }
 
-button:first-child {
+.btn:first-child {
     margin-left: 0;
 }
+
+
 
 /* Hover links */
 a {
@@ -161,4 +164,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+a:hover:has(.btn) {
+    text-decoration: none;
 }

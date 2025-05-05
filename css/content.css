@@ -16,11 +16,10 @@
     background-color: var(--background);
     border: none;
     border-radius: 20px;
-    transition: background-color 0.1s;
-
-    box-shadow: 0 0.2em var(--dark-bg);
-    transform: translateY(-0.2em);
     transition: 0.1s;
+
+    box-shadow: 0 var(--btn-z) var(--dark-bg);
+    transform: translateY(var(--btn-zn));
 
     min-height: 50px;
     padding: 2px 20px;
@@ -39,10 +38,11 @@
 }
 .tab.active {
     background-color: var(--primary);
-    box-shadow: 0 0.2em var(--secondary);
+    box-shadow: 0 var(--btn-z) var(--secondary);
 }
 .tab.active:hover {
     background-color: var(--secondary);
+    box-shadow: 0 0 var(--secondary);
 }
 
 .tab p {

@@ -27,12 +27,18 @@ p, ul {
 *::selection {
     background-color: var(--primary);
 }
+/* .rainbow-selection::selection {
+    background: #dc3545;
+    background: linear-gradient(90deg, #dc3545, #fd7e14, #ffc107, #198754, #0dcaf0, #0d6efd, #6610f2, #d63384) !important;
+    text-decoration: underline;
+} */
 
 body {
     padding: 0;
     margin: 0;
     /* background: var(--dark-bg); */
     background-image: url("../assets/container-bg.svg");
+    background-size: 300px;
     background-attachment: fixed;
     
 }

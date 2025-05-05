@@ -1,6 +1,7 @@
 :root {
     /* Rainbow */
     --blue: #0d6efd;
+    --blue2: #28f;
     --purple: #6610f2;
     --pink: #d63384;
     --red: #dc3545;
@@ -35,14 +36,17 @@
     --bs-gray-dark: #343a40;
     --bs-gray-900: #212529;
     --bs-dark: #212529;
+
+    --btn-z: 0.4rem;
+    --btn-zn: -0.4rem;
 }
 
 
 /* .btns */
 .btn {
     background: var(--primary);
-    box-shadow: 0 0.2em var(--secondary);
-    transform: translateY(-0.2em);
+    box-shadow: 0 var(--btn-z) var(--secondary);
+    transform: translateY(var(--btn-zn));
 
     color: #fff;
     font-weight: 600;
@@ -67,70 +71,79 @@
     color: black;
 }
 
+
+
 /* Colors */
 .btn.color-white {
     background: white;
     color: black;
-    box-shadow: 0 0.2em #bbb;
+    box-shadow: 0 var(--btn-z) #bbb;
 }
 
 .btn.color-black {
     background: #111;
     color: white;
-    box-shadow: 0 0.2em black;
+    box-shadow: 0 var(--btn-z) black;
 }
 
 .btn.color-red {
     background: var(--red);
-    box-shadow: 0 0.2em var(--red-dark);
+    box-shadow: 0 var(--btn-z) var(--red-dark);
 }
 
 .btn.color-orange {
     background: var(--orange);
-    box-shadow: 0 0.2em var(--orange-dark);
+    box-shadow: 0 var(--btn-z) var(--orange-dark);
 }
 
 .btn.color-yellow {
     background: var(--yellow);
-    box-shadow: 0 0.2em var(--yellow-dark);
+    box-shadow: 0 var(--btn-z) var(--yellow-dark);
     color: black;
 }
 
 .btn.color-green {
     background: var(--green);
-    box-shadow: 0 0.2em var(--green-dark);
+    box-shadow: 0 var(--btn-z) var(--green-dark);
 }
 
 .btn.color-teal {
     background: var(--teal);
-    box-shadow: 0 0.2em var(--teal-dark);
+    box-shadow: 0 var(--btn-z) var(--teal-dark);
 }
 
 .btn.color-cyan {
     background: var(--cyan);
-    box-shadow: 0 0.2em var(--cyan-dark);
+    box-shadow: 0 var(--btn-z) var(--cyan-dark);
 }
 
 .btn.color-blue {
     background: var(--blue);
-    box-shadow: 0 0.2em var(--blue-dark);
+    box-shadow: 0 var(--btn-z) var(--blue-dark);
+}
+.btn.color-blue2 {
+    background: var(--blue2);
+    box-shadow: 0 var(--btn-z) var(--blue-dark);
 }
 
 .btn.color-purple {
     background: var(--purple);
-    box-shadow: 0 0.2em var(--purple-dark);
+    box-shadow: 0 var(--btn-z) var(--purple-dark);
 }
 
 .btn.color-pink {
     background: var(--pink);
-    box-shadow: 0 0.2em var(--pink-dark);
+    box-shadow: 0 var(--btn-z) var(--pink-dark);
 }
 
 .btn.color-gray {
     background: var(--bs-gray);
-    box-shadow: 0 0.2em var(--bs-gray-dark);
+    box-shadow: 0 var(--btn-z) var(--bs-gray-dark);
 }
 
+
+
+/* End */
 .btn:hover,
 .btn:active {
     box-shadow: 0 0 #0000;

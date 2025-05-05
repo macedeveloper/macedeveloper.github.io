@@ -9,7 +9,8 @@ descriptive-project {
     flex-grow: 1;
 
     background: #0005;
-    border: none;
+    border: 0.2em solid #0008;
+
     border-radius: 20px;
 }
 

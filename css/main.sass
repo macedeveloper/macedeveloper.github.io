@@ -1,0 +1,71 @@
+@use 'variables' as *
+
+:root
+    font-family: "Nunito Sans", sans-serif
+    font-weight: 500
+    font-size: 24px
+    margin: 0
+    padding: 0
+    scrollbar-color: $text black
+
+    
+*::selection
+    background-color: $primary
+
+
+html, body
+    max-width: 100%
+    overflow-x: hidden
+
+
+p
+    color: $text
+
+h1, h2, h3, h4, h5, h6
+    color: white
+    margin: 0 auto
+
+h1
+    font-size: 64px
+
+h2
+    font-size: 48px
+
+h3
+    font-size: 36px
+
+h4, h5, h6
+    font-size: 32px
+
+
+a
+    color: $link
+    text-decoration: none
+
+a:hover
+    color: $link
+    text-decoration: underline
+
+
+body
+    margin: 0
+    padding: 0
+    min-height: 100dvh
+
+
+.flex-row
+    display: flex
+    flex-direction: row
+    // flex-wrap: wrap
+    *
+        flex-grow: 1
+        flex-shrink: 1
+
+.flex-col
+    display: flex
+    flex-direction: column
+
+
+img.icon
+    height: 1cap
+    aspect-ratio: 1

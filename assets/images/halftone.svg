@@ -1,0 +1,28 @@
+<svg width="40" height="480" viewBox="0 0 40 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_282_84)">
+<circle cx="30" cy="254" r="5" fill="black"/>
+<circle cx="30" cy="290" r="7" fill="black"/>
+<circle cx="30" cy="330" r="8" fill="black"/>
+<circle cx="30" cy="370" r="9" fill="black"/>
+<ellipse cx="10" cy="236" rx="4" ry="4" transform="rotate(90 10 236)" fill="black"/>
+<ellipse cx="30" cy="218" rx="3" ry="3" transform="rotate(90 30 218)" fill="black"/>
+<ellipse cx="10" cy="200" rx="2" ry="2" transform="rotate(90 10 200)" fill="black"/>
+<circle cx="10" cy="272" r="5" transform="rotate(90 10 272)" fill="black"/>
+<ellipse cx="10" cy="310" rx="7" ry="7" transform="rotate(90 10 310)" fill="black"/>
+<circle cx="10" cy="350" r="8" transform="rotate(90 10 350)" fill="black"/>
+<circle cx="10" cy="390" r="10" transform="rotate(90 10 390)" fill="black"/>
+<ellipse cx="30" cy="410" rx="11" ry="11" transform="rotate(90 30 410)" fill="black"/>
+<ellipse cx="50" cy="430" rx="12" ry="12" transform="rotate(90 50 430)" fill="black"/>
+<ellipse cx="30" cy="450" rx="13" ry="13" transform="rotate(90 30 450)" fill="black"/>
+<ellipse cx="50" cy="470" rx="14" ry="14" transform="rotate(90 50 470)" fill="black"/>
+<ellipse cx="-10" cy="410" rx="11" ry="11" transform="rotate(90 -10 410)" fill="black"/>
+<ellipse cx="10" cy="430" rx="12" ry="12" transform="rotate(90 10 430)" fill="black"/>
+<ellipse cx="-10" cy="450" rx="13" ry="13" transform="rotate(90 -10 450)" fill="black"/>
+<ellipse cx="10" cy="470" rx="14" ry="14" transform="rotate(90 10 470)" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_282_84">
+<rect width="40" height="480" fill="white"/>
+</clipPath>
+</defs>
+</svg>

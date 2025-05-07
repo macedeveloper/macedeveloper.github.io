@@ -2,152 +2,124 @@
 <html lang="ru">
 
 <head>
-    <!-- Main -->
+    <!-- Info -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page info & metadata -->
-    <title>Mace Dev ∙ Разработчик</title>
+    <title> (2025) Mace Dev ∙ Разработчик </title>
+    <link rel="shortcut icon" href="assets/logos/macedev.svg" type="image/x-icon">
 
-
-    <!-- Metadata -->
+    <!-- Meta data -->
     <meta name="keywords" content="Mace Dev, MaceDev, Ilya Bulava, Илья Булава, Mace Studios, Мейс Дев">
-    <link rel="icon" href="/assets/logo/IconWeb.png" type="image/png">
-    <meta name="theme-color" content="#4951FF">
-    <!-- Description -->
-    <meta name="description" content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством.
-    На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force.
-    Я делюсь своим опытом здесь с 2018 года. Давайте будем творить вместе!">
-    <!-- <meta name="description" content="Hello! I'm Ilya, passionate about game development, music, and art.
-    Here, you can check out my favorite projects, like The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain, and Dynamic Force.
-    I've been sharing my adventures here since 2018. Let's create together!"> -->
-
 
     <!-- OpenGraph metadata -->
     <meta property="og:url" content="https://macestudios.ru/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mace Dev ∙ Разработчик">
     <meta property="og:image" content="/assets/logo/IconCircle.svg">
+
     <!-- Description -->
     <meta property="og:description" content="Привет! Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством.
     На этом сайте вы можете познакомиться с моими любимыми проектами, такими как например: The Ultimate Contest, PcBoy 5, PcBoy800 4, Cookie Ungain и Dynamic Force.
     Я делюсь своим опытом здесь с 2018 года. Давайте будем творить вместе!">
 
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&amp;display=swap">
-
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Tucmoji -->
-    <link rel="stylesheet" href="https://macestudios.ru/tucmojicss/style.css">
-
-
-    <!-- Styles -->
+    <!-- Style sheets -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/descriptive-project.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/arts-section.css">
+    <link rel="stylesheet" href="css/bg.css">
 
+    <link rel="stylesheet" href="css/arts-section.css">
+    <link rel="stylesheet" href="css/descriptive-project.css">
 
     <!-- Scripts -->
-    <!-- <script src="/script.js"></script> -->
+    <script src="js/tabs.js"></script>
+    <script src="js/arts.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
-    <!-- 
+    <!-- Привет всем кто это читает
 
-    Привет тому, кто это читает! 😎
-    (особенно Айдару)
+    Список дел:
+    - Перенести (починить) все разделы, кнопки, оформление
+    - Переделать descriptive-project
+    - Совместимость с телефонами
+    - Анимация запуска
+    - Иконки nav bar-а
 
-    Список дел для сайта:
-    - Перевод на английский
 
     -->
 
+    <div class="background"></div>
+    
+    <nav>
+        <div id="nav-home" class="nav-btn active"> <img src="assets/pageicons/home.svg"> </div>
+        <div class="nav-sep"></div>
+
+        <div id="nav-games" class="nav-btn"> <img src="assets/pageicons/games.svg"> </div>
+        <div id="nav-projects" class="nav-btn"> <img src="assets/pageicons/box.svg"> </div>
+        <div id="nav-arts" class="nav-btn"> <img src="assets/pageicons/draw.svg"> </div>
+        <div id="nav-music" class="nav-btn"> <img src="assets/pageicons/music.svg"> </div>
+        <div class="nav-sep"></div>
+
+        <div id="nav-trivia" class="nav-btn"> <img src="assets/pageicons/question.svg"> </div>
+        <div id="nav-contact" class="nav-btn"> <img src="assets/pageicons/talk.svg"> </div>
+    </nav>
+
     <div class="container">
 
-        <header>
-            <div class="header-logo">
-                <!-- <img src="assets/logo/IconCircle.svg" alt="Logo" height="200px"> -->
-                <img src="assets/logo/bday.svg" alt="Logo" height="240px">
+        <!-- Home page -->
+        <section class="tab active" id="tab-home">
+
+            <div class="flex-col" style="flex: 200px; justify-content: start;">
+                <img src="assets/logos/macedev.svg" alt="Logo" width="200px" id="main-page-logo">
             </div>
 
-            <div class="header-info">
-                <h1 class="rainbow-selection" style="text-align: left;"> Mace Dev </h1>
-                <p> Привет! </p>
-                <p> Меня зовут Илья, и я увлекаюсь разработкой видеоигр, музыкой и искусством.
-                    На этом сайте вы можете познакомиться с моими любимыми проектами. </p>
-                <p> Делюсь своим опытом с 2018 года. Давайте будем творить вместе! </p>
+            <div style="flex-shrink: 2;">
+                <h1> Mace Dev </h1>
+                <p>
+                    Привет!
+                    <br><br>
+                    Меня зовут Илья, я увлекаюсь разработкой видеоигр, музыкой и художеством.
+                    На этом сайте вы можете познакомиться с моими любимыми проектами.
+                    <br><br>
+                    Делюсь своим опытом с 2018 года. Давайте будем творить вместе!
+                </p>
             </div>
 
-            <div class="header-soc">
-                <a class="header-soc-item" href="https://www.youtube.com/@macedev" target="_blank">
-                    <img src="assets/branding/yt-logo.svg" title="Канал на YouTube">
+            <div class="home-socials flex-col" style="flex: 200px; flex-direction: row; flex-wrap: wrap; align-items: space-evenly; justify-content: space-evenly;">
+                <a class="btn" href="https://www.youtube.com/@macedev">
+                    <div class="btn btn-red" style="min-width: 200px;"> <i class="bi bi-youtube"></i> Ютуб Канал </div>
                 </a>
-                <!-- <a class="header-soc-item" href="https://vk.com/macedev" target="_blank">
-                    <img src="assets/branding/vk-logo.svg" title="Группа ВКонтакте">
+                <a class="btn" href="https://t.me/macedev">
+                    <div class="btn btn-blue" style="min-width: 200px;"> <i class="bi bi-telegram"></i> Тг Канал </div>
+                </a>
+                <a class="btn" href="https://github.com/macedeveloper">
+                    <div class="btn btn-black" style="min-width: 200px;"> <i class="bi bi-github"></i> ГитХаб </div>
+                </a>
+                <!-- <a class="btn" href="">
+                    <div class="btn btn-teal" style="min-width: 200px;"> <i class="bi bi-x"></i> Пусто </div>
                 </a> -->
-                <a class="header-soc-item" href="https://t.me/macedev" target="_blank">
-                    <img src="assets/branding/tg-logo.svg" title="Телеграм канал">
+                <a class="btn" href="https://t.me/mace_dev">
+                    <div class="btn btn-purple" style="min-width: 200px;"> <i class="bi bi-person-circle"></i> Написать мне </div>
                 </a>
-                <a class="header-soc-item" href="https://github.com/macedeveloper" target="_blank">
-                    <img src="assets/branding/gh-logo.svg" title="GitHub">
-                </a>
-                <!-- <a class="header-soc-item" href="https://discordapp.com/users/885172882727133205" target="_blank">
-                    <img src="assets/branding/ds-logo.svg" title="Аккаунт в Discord">
-                </a> -->
-            </div>
-        </header>
-
-
-        <div class="content-outer">
-
-            <h2 style="display: block; text-align: center;"> Разделы сайта </h2>
-
-            <div class="tabs">
-                <div class="tab" id="tab-games" title="#games">
-                    <p> <i class="bi bi-controller"></i> Я создаю игры... </p>
-                </div>
-                <div class="tab" id="tab-projects" title="#projects">
-                    <p> <i class="bi bi-archive"></i> Мои мини-проекты... </p>
-                </div>
-                <div class="tab" id="tab-arts" title="#arts">
-                    <p> <i class="bi bi-palette"></i> Я рисую... </p>
-                </div>
-                <div class="tab" id="tab-music" title="#music">
-                    <p> <i class="bi bi-music-note-beamed"></i> Я делаю музыку... </p>
-                </div>
-                <div class="tab" id="tab-trivia" title="#trivia">
-                    <p> <i class="bi bi-question-circle"></i> Ещё обо мне... </p>
-                </div>
-                <div class="tab" id="tab-contact" title="#contact">
-                    <p> <i class="bi bi-chat-dots"></i> Как мне написать? </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="intab" id="intab-main">
-
-            <div class="flex-col">
-                <!-- <h2>Главная</h2> -->
-                <div class="flex-row" style="flex-grow: 1;">
-                    <img src="assets/HeroEverything.png" height="200px">
-                </div>
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="intab active" id="intab-games">
+
+        <section class="tab" id="tab-games" style="flex-direction: column;">
 
             <div class="content-outer">
                 <!-- Header -->
@@ -163,7 +135,7 @@
                                 Бойня, Охота за шляпой и прятки</p>
                             <!-- Multiplayer competition! Four game modes: Race, Slasher, Hide and Seek, and Hat Hunt -->
                             <a href="https://bulava.itch.io/tuc" target="_blank">
-                                <div class="btn color-pink"> <i class="bi bi-controller"></i> Играть на itch.io </div>
+                                <div class="btn btn-pink"> <i class="bi bi-controller"></i> Играть на itch.io </div>
                             </a>
                         </div>
                     </descriptive-project>
@@ -178,7 +150,7 @@
                             </p>
                             <!-- <p class="half-opacity">Action platformer. Graphics and music in the style of the 90's games (16-bit). 8 levels to play</p> -->
                             <a href="https://bulava.itch.io/pcboy5" target="_blank">
-                                <div class="btn color-green"> <i class="bi bi-download"></i> Скачать из itch.io </div>
+                                <div class="btn btn-green"> <i class="bi bi-download"></i> Скачать из itch.io </div>
                             </a>
                         </div>
                     </descriptive-project>
@@ -191,7 +163,7 @@
                             <p class="half-opacity">PcBoy800 4 Обновлён в 2024! 16-битный платформер</p>
                             <!-- <p class="half-opacity">PcBoy800 4 Updated in 2024! 16-bit action platformer</p> -->
                             <a href="https://bulava.itch.io/pcboy2024" target="_blank">
-                                <div class="btn color-pink">
+                                <div class="btn btn-pink">
                                     <i class="bi bi-controller"></i> Играть на itch.io
                                 </div>
                             </a>
@@ -213,7 +185,7 @@
                                 controls the keyboard and tries to collect cookies in a time limit, while the other
                                 player uses the mouse to stop them. (Game is in early demo)</p> -->
                             <a href="https://bulava.itch.io/cookie-ungain" target="_blank">
-                                <div class="btn color-pink">
+                                <div class="btn btn-pink">
                                     <i class="bi bi-controller"></i> Играть на itch.io
                                 </div>
                             </a>
@@ -230,18 +202,18 @@
                             <p class="half-opacity" id="Game-DF-Desc">Мультиплеерные гоночки, вид сверху</p>
                             <!-- <p class="half-opacity" id="Game-DF-Desc">Top-down multiplayer racing game</p> -->
                             <a href="https://www.newgrounds.com/portal/view/885110" target="_blank">
-                                <div class="btn color-orange">
+                                <div class="btn btn-orange">
                                     <i class="bi bi-controller"></i> Играть на Newgrounds
                                 </div>
                             </a>
 
                             <a href="https://drive.google.com/uc?export=download&id=1EuqeheZdKDTZlt2oRSrwHc7cnBfu4h0P"
                                 target="_blank">
-                                <div class="btn color-green"> <i class="bi bi-android"></i>
+                                <div class="btn btn-green"> <i class="bi bi-android"></i>
                                     Скачать на Android (.apk) </div>
                             </a>
                             <a href="https://apps.rustore.ru/app/com.macestudios.dynamicforce" target="_blank">
-                                <div class="btn color-blue"> <i class="bi bi-front" target="_blank"></i> Скачать из
+                                <div class="btn btn-blue"> <i class="bi bi-front" target="_blank"></i> Скачать из
                                     RuStore
                                 </div>
                             </a>
@@ -258,14 +230,13 @@
                             <!-- <p class="half-opacity" id="Game-NSN-Desc"> FPS retro-styled horror (Unfinished) </p> -->
                             <a href="https://drive.google.com/uc?export=download&id=1-21wR_GS9rXESeX8DGmfAe9hDKWOzfYj"
                                 target="_blank">
-                                <div class="btn color-green"> <i class="bi bi-download"></i> Скачать (Windows)
+                                <div class="btn btn-green"> <i class="bi bi-download"></i> Скачать (Windows)
                                 </div>
                             </a>
                         </div>
                     </descriptive-project>
                 </div>
             </div>
-
 
             <div class="content-outer">
                 <!-- Header -->
@@ -279,12 +250,12 @@
                             <p class="half-opacity">Multiplayer Race/Sandbox game. Prequel for "The Ultimate
                                 Contest"</p>
                             <a href="https://www.newgrounds.com/portal/view/827334" target="_blank">
-                                <div class="btn">
+                                <div class="btn btn-primary">
                                     <i class="bi bi-tools"></i> Remake (Sandbox mode)
                                 </div>
                             </a>
                             <a href="https://www.newgrounds.com/portal/view/817571" target="_blank">
-                                <div class="btn color-gray"> Old version (Race mode)</div>
+                                <div class="btn btn-gray"> Old version (Race mode)</div>
                             </a>
                         </div>
                     </descriptive-project>
@@ -297,11 +268,11 @@
                             <h3>PcBoy800 2</h3>
                             <a href="https://drive.google.com/file/d/1IZvzY6OzTdHk5GYuXTJpmEedrRwQoY8x/view?usp=sharing"
                                 target="_blank">
-                                <div class="btn"> <i class="bi bi-download"></i> Download latest </div>
+                                <div class="btn btn-primary"> <i class="bi bi-download"></i> Download latest </div>
                             </a>
                             <a href="https://drive.google.com/drive/folders/1hrnn6_-eGHiJinF4nHURMGhJfc2Gtlbi?usp=sharing"
                                 target="_blank">
-                                <div class="btn color-gray"> Old versions </div>
+                                <div class="btn btn-gray"> Old versions </div>
                             </a>
                         </div>
                     </descriptive-project>
@@ -312,7 +283,7 @@
                         <div class="name">
                             <h3>PcBoy X</h3>
                             <a href="https://www.newgrounds.com/portal/view/820950" target="_blank">
-                                <div class="btn">
+                                <div class="btn btn-primary">
                                     <i class="bi bi-globe2"></i> Play on Newgrounds
                                 </div>
                             </a>
@@ -320,10 +291,11 @@
                     </descriptive-project>
                 </div>
             </div>
-        </div>
+
+        </section>
 
 
-        <div class="intab" id="intab-projects">
+        <section class="tab" id="tab-projects">
             <div class="content-outer">
                 <!-- Header -->
                 <h1>Мои проекты</h1>
@@ -355,10 +327,10 @@
                     </descriptive-project> -->
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="intab" id="intab-arts" style="text-align: center;">
+        <section class="tab" id="tab-arts" style="text-align: center;">
             <div class="content-outer">
                 <!-- Title -->
                 <h1>Мои рисунки</h1>
@@ -435,10 +407,10 @@
                 <script src="scripts/arts.js"></script>
 
             </div>
-        </div>
+        </section>
 
 
-        <div class="intab" id="intab-music" style="text-align: center;">
+        <section class="tab" id="tab-music" style="text-align: center;">
             <div class="content-outer">
                 <div class="name">
                     <h2> <i class="bi bi-music-note-beamed"></i> Mace Dev </h2>
@@ -500,17 +472,17 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="intab" id="intab-trivia">
+        <section class="tab" id="tab-trivia">
             <div class="content-outer" style="display: flex; flex-grow: 1;">
                 <img src="assets/placeholder.png" style="width: 100%;">
             </div>
-        </div>
+        </section>
 
 
-        <div class="intab" id="intab-contact" style="text-align: center;">
+        <section class="tab" id="tab-contact" style="text-align: center;">
             <div class="content-outer">
 
                 <h1 style="margin-bottom: 0;"> Связаться со мной </h1>
@@ -567,12 +539,11 @@
                     Все права защищены.
                 </p>
             </div>
-        </div>
+        </section>
 
 
     </div>
 
-    <script src="scripts/tabs.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+@use 'variables' as *;
+
+$btn-depth: $outline;
+$transition-len: 0.08s;
+$darken: 20%;
+
+a.btn {
+    color: white;
+    text-decoration: none !important;
+}
+
+$button-variants: (
+    "primary": ($primary, $secondary),
+
+    "red": ($red, darken($red, $darken)),
+    "orange": ($orange, darken($orange, $darken)),
+    "yellow": ($yellow, darken($yellow, $darken)),
+    "green": ($green, darken($green, $darken)),
+    "teal": ($teal, darken($teal, $darken)),
+    "cyan": ($cyan, darken($cyan, $darken)),
+    "blue": ($blue, darken($blue, $darken)),
+    "purple": ($purple, darken($purple, $darken)),
+    "pink": ($pink, darken($pink, $darken)),
+
+    "black": (#111, #000),
+    "white": (#fff, #bbb),
+    "gray": ($bs-gray, $bs-gray-800),
+);
+
+
+div.btn {
+    display: inline-flex;
+    // align-items: baseline;
+    gap: 0.5rem;
+
+    margin: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-weight: 600;
+
+    transform: translateY(-$btn-depth);
+    transition: $transition-len;
+
+    &:hover {
+        transform: translateY(0);
+    }
+
+    // Generate button variants
+    @each $name, $colors in $button-variants {
+        $color: nth($colors, 1);
+        $shadow: nth($colors, 2);
+
+        &-#{$name} {
+            background: $color;
+            box-shadow: 0 $btn-depth $shadow;
+
+            &:hover {
+                background: $shadow;
+                box-shadow: 0 0 $shadow;
+            }
+        }
+    }
+    &-yellow, &-white {
+        color: black;
+    }
+}

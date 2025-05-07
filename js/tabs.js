@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.intab');
+    const navbtns = document.querySelectorAll('.nav-btn');
+    const contents = document.querySelectorAll('.tab');
 
     // Функция для активации вкладки
     function activateTab(tabId) {
@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
             content.classList.remove('active');
         });
         // Показываем нужный контент
-        const contentId = `intab-${tabId.replace('tab-', '')}`;
+        const contentId = tabId.replace('nav-', 'tab-');
         const contentElement = document.getElementById(contentId);
         if (contentElement) {
             contentElement.classList.add('active');
         }
 
         // Обновляем активный класс на вкладках
-        tabs.forEach(tab => {
+        navbtns.forEach(tab => {
             tab.classList.remove('active');
             if (tab.id === tabId) {
                 tab.classList.add('active');
@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Проверяем хэш в URL при загрузке страницы
-    let hash = window.location.hash;
-    if (hash) {
-        const tabId = `tab-${hash.slice(1)}`; // Преобразуем хэш в ID вкладки
-        activateTab(tabId);
-    } else {
-        // Если хэша нет, активируем первую вкладку по умолчанию
-        activateTab('tab-games');
-    }
+    // let hash = window.location.hash;
+    // if (hash) {
+    //     const tabId = `tab-${hash.slice(1)}`; // Преобразуем хэш в ID вкладки
+    //     activateTab(tabId);
+    // } else {
+    //     // Если хэша нет, активируем первую вкладку по умолчанию
+    //     activateTab('tab-home');
+    // }
 
     // Добавляем обработчики событий для вкладок
-    tabs.forEach(tab => {
+    navbtns.forEach(tab => {
         tab.addEventListener('click', function() {
             activateTab(tab.id);
         });

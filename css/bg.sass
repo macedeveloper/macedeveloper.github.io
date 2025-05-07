@@ -1,0 +1,35 @@
+// Обёртка для всего контента (кроме фона)
+.container
+    position: relative
+    z-index: 1 // Контент выше фона
+
+// Фон теперь не на body, а на своём слое
+.background
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: black // Чёрный задний слой
+
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 200vw
+        height: 200vh
+        transform: translate(-50%, -50%) rotate(10deg)
+        transform-origin: center
+
+    &::before
+        // Шахматная клетка
+        background-image: url('/assets/images/checker.svg')
+        background-size: 400px 400px
+
+    &::after
+        // Halftone эффект
+        background-image: url('/assets/images/halftone.svg')
+        mask-image: linear-gradient(to bottom, black 40%, black 100%)
+        background-size: auto 100%

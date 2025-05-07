@@ -1,0 +1,48 @@
+@use 'variables' as *
+
+
+.container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 40px
+    padding: 100px 0
+    padding-bottom: 150px
+
+    min-height: calc(100dvh - 250px)
+
+
+section 
+    margin: 0 auto
+    padding: 40px
+
+    display: none
+
+    background-color: transparentize($bg, 0.2)
+    border: none
+    outline: $outline solid $container-outline
+    border-radius: 40px
+
+    width: clamp(0px, 1280px, calc(100vw - 80px))
+    min-height: 240px
+
+    gap: 40px
+    
+    @media only screen and (max-width: calc(1280px + 80px))
+        outline: $outline solid $container-outline
+        border-radius: 0px
+        flex-wrap: wrap
+
+    &.active
+        display: flex
+
+
+.home-socials * 
+    flex-grow: 0
+
+#main-page-logo
+    transition: transform 0.5s
+    user-select: none
+    
+    &:hover
+        transform: rotate(1turn)

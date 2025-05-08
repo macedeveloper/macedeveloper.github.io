@@ -1,0 +1,109 @@
+@use 'variables' as *;
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform;
+
+    &::before,
+    &::after,
+    &>div {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: repeat;
+        backface-visibility: hidden;
+        will-change: transform;
+    }
+
+    &::before {
+        background: #000;
+        z-index: calc(1 - 100);
+    }
+
+    &::after {
+        z-index: calc(2 - 100);
+        background-image: url('/assets/images/checker.svg');
+        background-size: 250px 250px;
+        transform: rotate(10deg) scale(2);
+        transform-origin: center;
+        animation: moveLeft 100s linear infinite;
+    }
+
+    &>div:first-child {
+        z-index: calc(3 - 100);
+        background-image: url('/assets/images/halftone.svg');
+        mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+        transform: rotate(10deg) scale(2);
+        transform-origin: center;
+        background-size: auto 100%;
+        animation: moveLeft 60s linear infinite;
+    }
+
+    &>div:nth-child(2) {
+        z-index: calc(4 - 100);
+        background-image: url('/assets/images/wave1.svg');
+        height: 30vh;
+        animation: moveLeftWave 20s linear infinite;
+    }
+
+    &>div:nth-child(3) {
+        z-index: calc(5 - 100);
+        // '/assets/images/wave2.svg'
+        background-image: url('/assets/images/wave1.svg');
+        height: 18vh;
+        animation: moveLeftWave 15s linear infinite;
+    }
+
+    &>div:nth-child(2),
+    &>div:nth-child(3) {
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+        background-position: bottom;
+        top: auto;
+        bottom: 0;
+    }
+
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0) rotate(10deg) scale(2);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(10deg) scale(2);
+    }
+}
+
+@keyframes moveLeftWave {
+    0% {
+        transform: translateX(50%) scale(2);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(2);
+    }
+}
+
+@media (max-width: 768px) {
+    .background {
+        animation: none !important;
+
+        &::after,
+        &>div {
+            animation: none !important;
+            transform: rotate(0) scale(1) !important;
+        }
+    }
+}

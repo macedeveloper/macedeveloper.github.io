@@ -1,33 +1,90 @@
-.container {
-  position: relative;
-  z-index: 1;
-}
-
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  z-index: -1;
+  overflow: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
 }
-.background::before, .background::after {
+.background::before, .background::after, .background > div {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200vw;
-  height: 200vh;
-  transform: translate(-50%, -50%) rotate(10deg);
-  transform-origin: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 .background::before {
-  background-image: url("/assets/images/checker.svg");
-  background-size: 400px 400px;
+  background: #000;
+  z-index: -99;
 }
 .background::after {
+  z-index: -98;
+  background-image: url("/assets/images/checker.svg");
+  background-size: 250px 250px;
+  transform: rotate(10deg) scale(2);
+  transform-origin: center;
+  animation: moveLeft 100s linear infinite;
+}
+.background > div:first-child {
+  z-index: -97;
   background-image: url("/assets/images/halftone.svg");
-  -webkit-mask-image: linear-gradient(to bottom, black 40%, black 100%);
-          mask-image: linear-gradient(to bottom, black 40%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+  transform: rotate(10deg) scale(2);
+  transform-origin: center;
   background-size: auto 100%;
+  animation: moveLeft 60s linear infinite;
+}
+.background > div:nth-child(2) {
+  z-index: -96;
+  background-image: url("/assets/images/wave1.svg");
+  height: 30vh;
+  animation: moveLeftWave 20s linear infinite;
+}
+.background > div:nth-child(3) {
+  z-index: -95;
+  background-image: url("/assets/images/wave1.svg");
+  height: 18vh;
+  animation: moveLeftWave 15s linear infinite;
+}
+.background > div:nth-child(2), .background > div:nth-child(3) {
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: bottom;
+  top: auto;
+  bottom: 0;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0) rotate(10deg) scale(2);
+  }
+  100% {
+    transform: translateX(-50%) rotate(10deg) scale(2);
+  }
+}
+@keyframes moveLeftWave {
+  0% {
+    transform: translateX(50%) scale(2);
+  }
+  100% {
+    transform: translateX(-50%) scale(2);
+  }
+}
+@media (max-width: 768px) {
+  .background {
+    animation: none !important;
+  }
+  .background::after, .background > div {
+    animation: none !important;
+    transform: rotate(0) scale(1) !important;
+  }
 }/*# sourceMappingURL=bg.css.map */

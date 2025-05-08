@@ -1,8 +1,28 @@
 @use 'variables' as *
 
+    
+@font-face
+    font-family: 'Nebula Sans'
+    src: url('/assets/fonts/NebulaSans-Book.woff2') format('woff2')
+    font-feature-settings: 'ss01'
+    font-feature-settings: 'ss02'
+    font-feature-settings: 'ss03'
+    font-weight: 400
+    font-display: swap
+
+@font-face
+    font-family: 'Nebula Sans'
+    src: url('/assets/fonts/NebulaSans-Semibold.woff2') format('woff2')
+    font-feature-settings: 'ss01'
+    font-feature-settings: 'ss02'
+    font-feature-settings: 'ss03'
+    font-weight: 600
+    font-display: swap
+
+
 :root
-    font-family: "Nunito Sans", sans-serif
-    font-weight: 500
+    // font-family: "Nunito Sans", sans-serif
+    font-family: 'Nebula Sans', sans-serif
     font-size: 24px
     margin: 0
     padding: 0
@@ -22,6 +42,7 @@ p
     color: $text
 
 h1, h2, h3, h4, h5, h6
+    font-weight: 600
     color: white
     margin: 0 auto
 

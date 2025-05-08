@@ -12,35 +12,34 @@ descriptive-project {
     border: 0.2em solid #0008;
 
     border-radius: 20px;
-}
 
-@media (max-width: 768px) {
-    descriptive-project {
+    & div {
+        margin: 20px;
+    }
+
+    img {
+        margin: 20px;
+        width: 120px;
+        height: 170px;
+        border-radius: 5px;
+    }
+
+    div.name {
+        flex-grow: 1;
+    }
+
+    // div * {
+    //     margin: 0;
+    // }
+
+    a.btn, div.btn {
+        margin: {
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @media (max-width: 800px) {
         flex-direction: column;
     }
-}
-
-descriptive-project div {
-    margin: 20px;
-}
-
-descriptive-project img {
-    margin: 20px;
-    width: 120px;
-    height: 170px;
-    border-radius: 5px;
-}
-
-descriptive-project div.name {
-    flex-grow: 1;
-}
-
-descriptive-project div * {
-    margin: 0 ;
-}
-
-descriptive-project button {
-    margin: calc(0.2em + 8px) 0.5em 0 0;
-    padding: 6px 16px;
-    border-radius: 16px;
 }

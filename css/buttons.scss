@@ -7,6 +7,17 @@ $darken: 20%;
 a.btn {
     color: white;
     text-decoration: none !important;
+    user-select: none;
+
+    margin: auto;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+        div.btn {
+            outline: solid $outline white;
+        }
+    }
 }
 
 $button-variants: (
@@ -33,10 +44,10 @@ div.btn {
     // align-items: baseline;
     gap: 0.5rem;
 
-    margin: 12px;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
+    margin-top: $outline;
 
     text-align: center;
     align-items: center;
@@ -48,7 +59,7 @@ div.btn {
     transform: translateY(-$btn-depth);
     transition: $transition-len;
 
-    &:hover {
+    &:hover, &:focus {
         transform: translateY(0);
     }
 
@@ -61,13 +72,13 @@ div.btn {
             background: $color;
             box-shadow: 0 $btn-depth $shadow;
 
-            &:hover {
+            &:hover, &:focus {
                 background: $shadow;
                 box-shadow: 0 0 $shadow;
             }
         }
     }
-    &-yellow, &-white {
+    &-yellow, &-white, &-teal {
         color: black;
     }
 }

@@ -14,7 +14,7 @@ section {
   display: none;
   background-color: rgba(20, 20, 25, 0.8);
   border: none;
-  outline: 4px solid #2b2b35;
+  outline: 4px solid #2b2c38;
   border-radius: 40px;
   width: clamp(0px, 1280px, 100vw - 80px);
   min-height: 240px;
@@ -22,7 +22,7 @@ section {
 }
 @media only screen and (max-width: 1360px) {
   section {
-    outline: 4px solid #2b2b35;
+    outline: 4px solid #2b2c38;
     border-radius: 0px;
     flex-wrap: wrap;
   }
@@ -43,4 +43,19 @@ section.active {
 }
 #main-page-logo:hover {
   transform: rotate(1turn);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-gap {
+  display: flex;
+  gap: 40px;
 }/*# sourceMappingURL=section.css.map */

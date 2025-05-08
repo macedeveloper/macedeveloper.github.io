@@ -12,7 +12,7 @@ nav {
   gap: 20px;
   background-color: rgba(20, 20, 25, 0.8);
   border: none;
-  outline: 4px solid #2b2b35;
+  outline: 4px solid #2b2c38;
   border-radius: 35px;
   z-index: 20;
 }
@@ -31,15 +31,17 @@ nav .nav-btn {
   width: 60px;
   height: 60px;
   border-radius: 20px;
-  background-color: #2b2b35;
+  background-color: #2b2c38;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.08s;
 }
-nav .nav-btn img {
-  color: white;
+nav .nav-btn img, nav .nav-btn object {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   width: 40px;
   height: 40px;
 }
@@ -51,12 +53,12 @@ nav .nav-btn.active:hover {
   background-color: #7c82ff;
 }
 nav .nav-btn:hover {
-  background-color: #414152;
+  background-color: #414355;
 }
 nav .nav-sep {
   width: 10px;
   height: 10px;
   margin: auto;
   border-radius: 10px;
-  background-color: #2b2b35;
+  background-color: #2b2c38;
 }/*# sourceMappingURL=navbar.css.map */

@@ -23,10 +23,10 @@
 }
 .background::before {
   background: #000;
-  z-index: -99;
+  z-index: -150;
 }
 .background::after {
-  z-index: -98;
+  z-index: -140;
   background-image: url("/assets/images/checker.svg");
   background-size: 250px 250px;
   transform: rotate(10deg) scale(2);
@@ -34,7 +34,7 @@
   animation: moveLeft 100s linear infinite;
 }
 .background > div:first-child {
-  z-index: -97;
+  z-index: -130;
   background-image: url("/assets/images/halftone.svg");
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
           mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
@@ -44,15 +44,15 @@
   animation: moveLeft 60s linear infinite;
 }
 .background > div:nth-child(2) {
-  z-index: -96;
-  background-image: url("/assets/images/wave1.svg");
+  z-index: -120;
+  background-image: url("/assets/images/wave.svg");
   height: 30vh;
-  animation: moveLeftWave 20s linear infinite;
+  animation: moveLeftWave 30s linear infinite;
 }
 .background > div:nth-child(3) {
-  z-index: -95;
-  background-image: url("/assets/images/wave1.svg");
-  height: 18vh;
+  z-index: -110;
+  background-image: url("/assets/images/wave.svg");
+  height: 15vh;
   animation: moveLeftWave 15s linear infinite;
 }
 .background > div:nth-child(2), .background > div:nth-child(3) {

@@ -10,33 +10,24 @@ descriptive-project {
   border: 0.2em solid rgba(0, 0, 0, 0.5333333333);
   border-radius: 20px;
 }
-
-@media (max-width: 768px) {
-  descriptive-project {
-    flex-direction: column;
-  }
-}
 descriptive-project div {
   margin: 20px;
 }
-
 descriptive-project img {
   margin: 20px;
   width: 120px;
   height: 170px;
   border-radius: 5px;
 }
-
 descriptive-project div.name {
   flex-grow: 1;
 }
-
-descriptive-project div * {
-  margin: 0;
+descriptive-project a.btn, descriptive-project div.btn {
+  margin-top: 0;
+  margin-left: 0;
 }
-
-descriptive-project button {
-  margin: calc(0.2em + 8px) 0.5em 0 0;
-  padding: 6px 16px;
-  border-radius: 16px;
+@media (max-width: 800px) {
+  descriptive-project {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=descriptive-project.css.map */

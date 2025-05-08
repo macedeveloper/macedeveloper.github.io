@@ -51,9 +51,8 @@
     <!-- Привет всем кто это читает!
 
     До релиза:
-    - Перенести (починить) все разделы, кнопки, оформление
-    - Иконки nav bar-а
-    - Фон
+    - Проверить (исправлено ли) все разделы, кнопки, оформление
+    - Тривия
 
     После:
     - Переделать descriptive-project
@@ -66,68 +65,101 @@
         <div></div>
         <div></div>
         <div></div>
+
+        <img src="assets/images/neon-decor-1.svg" style="z-index: -115; position: absolute; bottom: 10vh; left: 8vw;">
+        <img src="assets/images/neon-decor-2.svg" style="z-index: -115; position: absolute; bottom: 16vh; right: 5vw;">
+        <img src="assets/images/neon-decor-3.svg" style="z-index: -115; position: absolute; top: 8vh; right: 10vw;">
     </div>
-    
+
     <nav>
-        <div id="nav-home" class="nav-btn active"> <img src="assets/pageicons/home.svg"> </div>
+        <div id="nav-home" class="nav-btn active"> <img src="assets/pageicons/house.svg"> </div>
         <div class="nav-sep"></div>
 
-        <div id="nav-games" class="nav-btn"> <img src="assets/pageicons/games.svg"> </div>
+        <div id="nav-games" class="nav-btn"> <img src="assets/pageicons/controller.svg"> </div>
         <div id="nav-projects" class="nav-btn"> <img src="assets/pageicons/box.svg"> </div>
-        <div id="nav-arts" class="nav-btn"> <img src="assets/pageicons/draw.svg"> </div>
-        <div id="nav-music" class="nav-btn"> <img src="assets/pageicons/music.svg"> </div>
+        <div id="nav-arts" class="nav-btn"> <img src="assets/pageicons/brush.svg"> </div>
+        <div id="nav-music" class="nav-btn"> <img src="assets/pageicons/music-note-beamed.svg"> </div>
         <div class="nav-sep"></div>
 
-        <div id="nav-trivia" class="nav-btn"> <img src="assets/pageicons/question.svg"> </div>
-        <div id="nav-contact" class="nav-btn"> <img src="assets/pageicons/talk.svg"> </div>
+        <div id="nav-trivia" class="nav-btn"> <img src="assets/pageicons/question-circle.svg"> </div>
+        <!-- <div id="nav-contact" class="nav-btn"> <img src="assets/pageicons/person-lines-fill.svg"> </div> -->
     </nav>
 
     <div class="container">
 
         <!-- Home page -->
         <section class="tab active" id="tab-home">
+            <div class="flex-col flex-gap">
 
-            <div class="flex-col" style="flex: 200px; justify-content: start;">
-                <img src="assets/logos/macedev.svg" alt="Logo" width="200px" id="main-page-logo">
+                <div class="flex-row flex-gap">
+                    <div class="flex-col" style="flex: 200px; align-items: center;">
+                        <img src="assets/logos/macedev.svg" alt="Logo" width="200px" id="main-page-logo">
+                    </div>
+
+                    <div class="flex-col" style="flex-shrink: 2; align-items: start;">
+                        <h1> Mace Dev </h1>
+                        <p>
+                            Привет!
+                            <br><br>
+                            Меня зовут Илья, я увлекаюсь разработкой видеоигр, музыкой и художеством.
+                            На этом сайте вы можете познакомиться с моими любимыми проектами.
+                            <br><br>
+                            Делюсь своим опытом с 2018 года. Давайте будем творить вместе!
+                        </p>
+                    </div>
+
+                    <div class="flex-col home-socials"
+                        style="flex: 200px; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-evenly;">
+
+                        <a class="btn" href="https://www.youtube.com/@macedev">
+                            <div class="btn btn-red" style="min-width: 200px;">
+                                <i class="bi bi-youtube"></i> Ютуб Канал
+                            </div>
+                        </a>
+
+                        <a class="btn" href="https://t.me/macedev">
+                            <div class="btn btn-blue" style="min-width: 200px;">
+                                <i class="bi bi-telegram"></i> Тг Канал
+                            </div>
+                        </a>
+
+                        <a class="btn" href="https://github.com/macedeveloper">
+                            <div class="btn btn-black" style="min-width: 200px;">
+                                <i class="bi bi-github"></i> ГитХаб
+                            </div>
+                        </a>
+
+                        <!-- <a class="btn" href="">
+                            <div class="btn btn-teal" style="min-width: 200px;">
+                                <i class="bi bi-check-circle"></i> Ок
+                            </div>
+                        </a> -->
+
+                        <a class="btn" href="https://t.me/mace_dev">
+                            <div class="btn btn-purple" style="min-width: 200px;">
+                                <i class="bi bi-telegram"></i> Напиши мне
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div>
+                    <p id="Footer-Copyright" style="opacity: 50%; text-align: center;">
+                        <i class="bi bi-c-circle"></i>
+                        2018-<abbr title="Всегда нужно думать наперёд.">2038</abbr>
+                        Mace Dev (ранее: Mace Studios).
+                        Все права защищены.
+                    </p>
+                </div>
+
             </div>
-
-            <div style="flex-shrink: 2;">
-                <h1> Mace Dev </h1>
-                <p>
-                    Привет!
-                    <br><br>
-                    Меня зовут Илья, я увлекаюсь разработкой видеоигр, музыкой и художеством.
-                    На этом сайте вы можете познакомиться с моими любимыми проектами.
-                    <br><br>
-                    Делюсь своим опытом с 2018 года. Давайте будем творить вместе!
-                </p>
-            </div>
-
-            <div class="home-socials flex-col" style="flex: 200px; flex-direction: row; flex-wrap: wrap; align-items: space-evenly; justify-content: space-evenly;">
-                <a class="btn" href="https://www.youtube.com/@macedev">
-                    <div class="btn btn-red" style="min-width: 200px;"> <i class="bi bi-youtube"></i> Ютуб Канал </div>
-                </a>
-                <a class="btn" href="https://t.me/macedev">
-                    <div class="btn btn-blue" style="min-width: 200px;"> <i class="bi bi-telegram"></i> Тг Канал </div>
-                </a>
-                <a class="btn" href="https://github.com/macedeveloper">
-                    <div class="btn btn-black" style="min-width: 200px;"> <i class="bi bi-github"></i> ГитХаб </div>
-                </a>
-                <!-- <a class="btn" href="">
-                    <div class="btn btn-teal" style="min-width: 200px;"> <i class="bi bi-x"></i> Пусто </div>
-                </a> -->
-                <a class="btn" href="https://t.me/mace_dev">
-                    <div class="btn btn-purple" style="min-width: 200px;"> <i class="bi bi-person-circle"></i> Написать мне </div>
-                </a>
-            </div>
-
         </section>
-
 
 
         <section class="tab" id="tab-games" style="flex-direction: column;">
 
-            <div class="content-outer">
+            <div class="flex-col">
                 <!-- Header -->
                 <h1>Мои игровые проекты</h1>
                 <div class="flex-rows">
@@ -140,7 +172,7 @@
                                 Гонка,
                                 Бойня, Охота за шляпой и прятки</p>
                             <!-- Multiplayer competition! Four game modes: Race, Slasher, Hide and Seek, and Hat Hunt -->
-                            <a href="https://bulava.itch.io/tuc" target="_blank">
+                            <a class="btn" href="https://bulava.itch.io/tuc" target="_blank">
                                 <div class="btn btn-pink"> <i class="bi bi-controller"></i> Играть на itch.io </div>
                             </a>
                         </div>
@@ -155,7 +187,7 @@
                                 (16-бит)
                             </p>
                             <!-- <p class="half-opacity">Action platformer. Graphics and music in the style of the 90's games (16-bit). 8 levels to play</p> -->
-                            <a href="https://bulava.itch.io/pcboy5" target="_blank">
+                            <a class="btn" href="https://bulava.itch.io/pcboy5" target="_blank">
                                 <div class="btn btn-green"> <i class="bi bi-download"></i> Скачать из itch.io </div>
                             </a>
                         </div>
@@ -168,7 +200,7 @@
                             <h3>PcBoy800 4 (PcBoy 2024)</h3>
                             <p class="half-opacity">PcBoy800 4 Обновлён в 2024! 16-битный платформер</p>
                             <!-- <p class="half-opacity">PcBoy800 4 Updated in 2024! 16-bit action platformer</p> -->
-                            <a href="https://bulava.itch.io/pcboy2024" target="_blank">
+                            <a class="btn" href="https://bulava.itch.io/pcboy2024" target="_blank">
                                 <div class="btn btn-pink">
                                     <i class="bi bi-controller"></i> Играть на itch.io
                                 </div>
@@ -190,7 +222,7 @@
                             <!-- <p class="half-opacity" id="Game-CUG-Desc">A two-player local vs game, where one player
                                 controls the keyboard and tries to collect cookies in a time limit, while the other
                                 player uses the mouse to stop them. (Game is in early demo)</p> -->
-                            <a href="https://bulava.itch.io/cookie-ungain" target="_blank">
+                            <a class="btn" href="https://bulava.itch.io/cookie-ungain" target="_blank">
                                 <div class="btn btn-pink">
                                     <i class="bi bi-controller"></i> Играть на itch.io
                                 </div>
@@ -207,18 +239,18 @@
                             <h3>Dynamic Force</h3>
                             <p class="half-opacity" id="Game-DF-Desc">Мультиплеерные гоночки, вид сверху</p>
                             <!-- <p class="half-opacity" id="Game-DF-Desc">Top-down multiplayer racing game</p> -->
-                            <a href="https://www.newgrounds.com/portal/view/885110" target="_blank">
+                            <a class="btn" href="https://www.newgrounds.com/portal/view/885110" target="_blank">
                                 <div class="btn btn-orange">
                                     <i class="bi bi-controller"></i> Играть на Newgrounds
                                 </div>
                             </a>
 
-                            <a href="https://drive.google.com/uc?export=download&id=1EuqeheZdKDTZlt2oRSrwHc7cnBfu4h0P"
+                            <a class="btn" href="https://drive.google.com/uc?export=download&id=1EuqeheZdKDTZlt2oRSrwHc7cnBfu4h0P"
                                 target="_blank">
                                 <div class="btn btn-green"> <i class="bi bi-android"></i>
                                     Скачать на Android (.apk) </div>
                             </a>
-                            <a href="https://apps.rustore.ru/app/com.macestudios.dynamicforce" target="_blank">
+                            <a class="btn" href="https://apps.rustore.ru/app/com.macestudios.dynamicforce" target="_blank">
                                 <div class="btn btn-blue"> <i class="bi bi-front" target="_blank"></i> Скачать из
                                     RuStore
                                 </div>
@@ -234,7 +266,7 @@
                             <p class="half-opacity" id="Game-NSN-Desc"> Ретро хоррор шутер от 1-го лица (Игра-недоделыш)
                             </p>
                             <!-- <p class="half-opacity" id="Game-NSN-Desc"> FPS retro-styled horror (Unfinished) </p> -->
-                            <a href="https://drive.google.com/uc?export=download&id=1-21wR_GS9rXESeX8DGmfAe9hDKWOzfYj"
+                            <a class="btn" href="https://drive.google.com/uc?export=download&id=1-21wR_GS9rXESeX8DGmfAe9hDKWOzfYj"
                                 target="_blank">
                                 <div class="btn btn-green"> <i class="bi bi-download"></i> Скачать (Windows)
                                 </div>
@@ -244,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="content-outer">
+            <div class="flex-col">
                 <!-- Header -->
                 <h1>Старые игры</h1>
                 <div class="flex-rows">
@@ -255,12 +287,12 @@
                             <h3>Y.N.P.N.</h3>
                             <p class="half-opacity">Multiplayer Race/Sandbox game. Prequel for "The Ultimate
                                 Contest"</p>
-                            <a href="https://www.newgrounds.com/portal/view/827334" target="_blank">
+                            <a class="btn" href="https://www.newgrounds.com/portal/view/827334" target="_blank">
                                 <div class="btn btn-primary">
                                     <i class="bi bi-tools"></i> Remake (Sandbox mode)
                                 </div>
                             </a>
-                            <a href="https://www.newgrounds.com/portal/view/817571" target="_blank">
+                            <a class="btn" href="https://www.newgrounds.com/portal/view/817571" target="_blank">
                                 <div class="btn btn-gray"> Old version (Race mode)</div>
                             </a>
                         </div>
@@ -272,11 +304,11 @@
                         <img src="assets/projects/thumbnails/pcb2.png" class="descriptive-project-icon">
                         <div class="name">
                             <h3>PcBoy800 2</h3>
-                            <a href="https://drive.google.com/file/d/1IZvzY6OzTdHk5GYuXTJpmEedrRwQoY8x/view?usp=sharing"
+                            <a class="btn" href="https://drive.google.com/file/d/1IZvzY6OzTdHk5GYuXTJpmEedrRwQoY8x/view?usp=sharing"
                                 target="_blank">
                                 <div class="btn btn-primary"> <i class="bi bi-download"></i> Download latest </div>
                             </a>
-                            <a href="https://drive.google.com/drive/folders/1hrnn6_-eGHiJinF4nHURMGhJfc2Gtlbi?usp=sharing"
+                            <a class="btn" href="https://drive.google.com/drive/folders/1hrnn6_-eGHiJinF4nHURMGhJfc2Gtlbi?usp=sharing"
                                 target="_blank">
                                 <div class="btn btn-gray"> Old versions </div>
                             </a>
@@ -288,7 +320,7 @@
                         <img src="assets/projects/thumbnails/pcbx.png" class="descriptive-project-icon">
                         <div class="name">
                             <h3>PcBoy X</h3>
-                            <a href="https://www.newgrounds.com/portal/view/820950" target="_blank">
+                            <a class="btn" href="https://www.newgrounds.com/portal/view/820950" target="_blank">
                                 <div class="btn btn-primary">
                                     <i class="bi bi-globe2"></i> Play on Newgrounds
                                 </div>
@@ -302,7 +334,7 @@
 
 
         <section class="tab" id="tab-projects">
-            <div class="content-outer">
+            <div class="flex-col" style="width: 100%;">
                 <!-- Header -->
                 <h1>Мои проекты</h1>
 
@@ -314,8 +346,8 @@
                             <h3 id="Game-Dem-Name"> Редактор Демотиваторов </h3>
                             <p class="half-opacity" id="Game-Dem-Desc"> Небольшой сайт для быстрого создания
                                 демотиваторов </p>
-                            <a href="https://macestudios.ru/mem" target="_blank">
-                                <div class="btn"> <i class="bi bi-box-arrow-up-right"></i> Открыть </div>
+                            <a class="btn" href="https://macestudios.ru/mem" target="_blank">
+                                <div class="btn btn-primary"> <i class="bi bi-box-arrow-up-right"></i> Открыть </div>
                             </a>
                         </div>
                     </descriptive-project>
@@ -327,7 +359,7 @@
                         <div class="name">
                             <h3 id="Game-Cards-Name">Карточки</h3>
                             <p class="half-opacity" id="Game-Cards-Desc"> Карточки моих друзей и некоторых знакомых </p>
-                            <a href="https://macestudios.ru/zevki-cards" target="_blank"><div class="btn">
+                            <a class="btn" href="https://macestudios.ru/zevki-cards" target="_blank"><div class="btn">
                                     <i class="bi bi-box-arrow-up-right"></i> Посмотреть </div></a>
                         </div>
                     </descriptive-project> -->
@@ -337,7 +369,7 @@
 
 
         <section class="tab" id="tab-arts" style="text-align: center;">
-            <div class="content-outer">
+            <div style="height: max-content;">
                 <!-- Title -->
                 <h1>Мои рисунки</h1>
 
@@ -417,50 +449,52 @@
 
 
         <section class="tab" id="tab-music" style="text-align: center;">
-            <div class="content-outer">
-                <div class="name">
-                    <h2> <i class="bi bi-music-note-beamed"></i> Mace Dev </h2>
-                    <a href="https://youtube.com/playlist?list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ&si=zfmy6nsqEfc9VBo7"
-                        target="_blank">
-                        <div class="btn color-b-yt">
-                            <i class="bi bi-youtube"></i>
-                            Плейлист на YouTube
-                        </div>
-                    </a>
-                    <a href="https://music.yandex.ru/artist/23564859" target="_blank">
-                        <div class="btn color-black" style="color: #fed42b;">
-                            <img src="assets/branding/YaMusic.svg" style="height: 1cap; display: inline-block;">
-                            Слушать на Яндекс
-                            Музыке
-                        </div>
-                    </a>
-                    <!-- <a href="https://vk.com/artist/macedev" target="_blank">
-                        <div class="btn color-b-vk">
+
+            <div class="flex-col" style="justify-content: center; flex: 1;">
+                <h2>
+                    <i class="bi bi-music-note-beamed"></i>
+                    Mace Dev
+                </h2>
+
+                <a class="btn" href="https://youtube.com/playlist?list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ" target="_blank">
+                    <div class="btn btn-red">
+                        <i class="bi bi-youtube"></i>
+                        Плейлист на YouTube
+                    </div>
+                </a>
+                <a class="btn" href="https://music.yandex.ru/artist/23564859" target="_blank">
+                    <div class="btn btn-black" style="color: #fed42b;">
+                        <img src="assets/branding/ya-music-color.svg" style="height: 1cap; display: inline-block;">
+                        Слушать на Яндекс
+                        Музыке
+                    </div>
+                </a>
+                <!-- <a class="btn" href="https://vk.com/artist/macedev" target="_blank">
+                        <div class="btn btn-blue">
                             <i class="bi bi-soundwave"></i> Слушать в ВК
                         </div>
                     </a> -->
-                    <a href="https://zvuk.com/artist/213163508" target="_blank">
-                        <div class="btn color-black">
-                            <i class="bi bi-broadcast"></i> Слушать в СберЗвуке
-                        </div>
-                    </a>
-                    <a href="https://open.spotify.com/artist/3qpBKyXLiLtP4hakJy0mcA" target="_blank">
-                        <div class="btn color-teal">
-                            <i class="bi bi-spotify"></i> Слушать на Spotify
-                        </div>
-                    </a>
-
-                </div>
+                <a class="btn" href="https://zvuk.com/artist/213163508" target="_blank">
+                    <div class="btn btn-black">
+                        <i class="bi bi-broadcast"></i> Слушать в СберЗвуке
+                    </div>
+                </a>
+                <a class="btn" href="https://open.spotify.com/artist/3qpBKyXLiLtP4hakJy0mcA" target="_blank">
+                    <div class="btn btn-teal" style="color: black;">
+                        <i class="bi bi-spotify"></i> Слушать на Spotify
+                    </div>
+                </a>
             </div>
 
-            <div class="content-outer">
+            <div class="flex-col" style="justify-content: center; flex: 1;">
                 <!-- Title -->
-                <h1>Плейлист на YouTube</h1>
+                <h2> Плейлист на YouTube </h2>
                 <!-- YouTube -->
                 <style>
                     iframe.yt-embed {
                         width: 640px;
                         height: 360px;
+                        border-radius: 20px;
                     }
 
                     @media (max-width: 840px) {
@@ -478,72 +512,13 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+
         </section>
 
 
         <section class="tab" id="tab-trivia">
-            <div class="content-outer" style="display: flex; flex-grow: 1;">
+            <div class="flex-col flex-gap" style="display: flex; flex-grow: 1;">
                 <img src="assets/placeholder.png" style="width: 100%;">
-            </div>
-        </section>
-
-
-        <section class="tab" id="tab-contact" style="text-align: center;">
-            <div class="content-outer">
-
-                <h1 style="margin-bottom: 0;"> Связаться со мной </h1>
-
-                <p style="margin: 0;">
-                    Мои личные аккаунты в других соц. сетях: <br>
-                    <span style="opacity: 50%;"> <i class="bi bi-exclamation-triangle"></i> (Пожалуйста, пишите в телеграм, остальные формы связи очень ненадёжные!!!) </span>
-                </p>
-
-
-                <ul style="width: fit-content; text-align: left; margin: 0 auto; list-style: '';">
-                    <!-- <li>
-                        <i class="bi bi-telegram"></i> <a title="Telegram" class="no-overflow"
-                            href="https://t.me/mace_dev" target="_blank"> Телеграм (@mace_dev) </a>
-                    </li> -->
-                    <a href="https://t.me/mace_dev" target="_blank" style="margin: 0 auto;">
-                        <div class="btn color-blue2">
-                            <i class="bi bi-telegram"></i>
-                            Написать мне в телеграм
-                        </div>
-                    </a>
-                    <li>
-                        <i class="bi bi-discord"></i> <a title="Discord" class="no-overflow"
-                            href="https://discordapp.com/users/885172882727133205" target="_blank">Discord
-                            (@mace_dev)</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-person-circle"></i> <a title="ВКонтакте" class="no-overflow"
-                            href="https://vk.com/mace_dev" target="_blank"> ВКонтакте (@mace_dev) </a>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-envelope-at-fill"></i> <a title="mail" class="no-overflow"
-                            href="mailto:bulava.place@gmail.com" target="_blank"> Личная почта </a>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-at-fill"></i> <a title="e-mail" class="no-overflow"
-                            href="mailto:i@macestudios.ru" target="_blank"> Официальная почта </a>
-                    </li>
-
-                    <!-- Ссылка удалена, потому-что тикток ведёт другой человек, не пишите сюда
-                    <li>
-                        <i class="bi bi-tiktok"></i> <a title="TikTok" class="no-overflow"
-                            href="https://www.tiktok.com/@macestudiosgames"
-                            target="_blank">tiktok.com/@macestudiosgames</a>
-                    </li> -->
-                </ul>
-
-
-                <p id="Footer-Copyright" style="opacity: 50%;">
-                    <i class="bi bi-c-circle"></i>
-                    2018-<abbr title="Ну... Всегда нужно думать наперёд.">2038</abbr> Mace Dev (ранее: Mace Studios).
-                    <br>
-                    Все права защищены.
-                </p>
             </div>
         </section>
 

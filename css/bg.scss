@@ -28,11 +28,11 @@
 
     &::before {
         background: #000;
-        z-index: calc(1 - 100);
+        z-index: -150;
     }
 
     &::after {
-        z-index: calc(2 - 100);
+        z-index: -140;
         background-image: url('/assets/images/checker.svg');
         background-size: 250px 250px;
         transform: rotate(10deg) scale(2);
@@ -41,7 +41,7 @@
     }
 
     &>div:first-child {
-        z-index: calc(3 - 100);
+        z-index: -130;
         background-image: url('/assets/images/halftone.svg');
         mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
         transform: rotate(10deg) scale(2);
@@ -51,17 +51,17 @@
     }
 
     &>div:nth-child(2) {
-        z-index: calc(4 - 100);
-        background-image: url('/assets/images/wave1.svg');
+        z-index: -120;
+        background-image: url('/assets/images/wave.svg');
         height: 30vh;
-        animation: moveLeftWave 20s linear infinite;
+        animation: moveLeftWave 30s linear infinite;
     }
 
     &>div:nth-child(3) {
-        z-index: calc(5 - 100);
+        z-index: -110;
         // '/assets/images/wave2.svg'
-        background-image: url('/assets/images/wave1.svg');
-        height: 18vh;
+        background-image: url('/assets/images/wave.svg');
+        height: 15vh;
         animation: moveLeftWave 15s linear infinite;
     }
 

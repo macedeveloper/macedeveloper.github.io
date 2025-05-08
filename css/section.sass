@@ -1,6 +1,6 @@
 @use 'variables' as *
 
-
+// Container
 .container
     display: flex
     flex-direction: column
@@ -11,8 +11,8 @@
 
     min-height: calc(100dvh - 250px)
 
-
-section 
+// Sections (tabs)
+section
     margin: 0 auto
     padding: 40px
 
@@ -27,7 +27,7 @@ section
     min-height: 240px
 
     gap: 40px
-    
+
     @media only screen and (max-width: calc(1280px + 80px))
         outline: $outline solid $container-outline
         border-radius: 0px
@@ -36,13 +36,27 @@ section
     &.active
         display: flex
 
-
-.home-socials * 
+// Special
+.home-socials *
     flex-grow: 0
 
 #main-page-logo
     transition: transform 0.5s
     user-select: none
-    
+
     &:hover
         transform: rotate(1turn)
+
+// flex-row & flex-col
+.flex-row
+    display: flex
+    flex-direction: row
+    // flex-wrap: wrap
+
+.flex-col
+    display: flex
+    flex-direction: column
+
+.flex-gap
+    display: flex
+    gap: 40px

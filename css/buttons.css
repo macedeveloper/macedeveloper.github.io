@@ -1,15 +1,26 @@
 a.btn {
   color: white;
   text-decoration: none !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin: auto;
+  padding: 0;
+}
+a.btn:focus {
+  outline: none;
+}
+a.btn:focus div.btn {
+  outline: solid 4px white;
 }
 
 div.btn {
   display: inline-flex;
   gap: 0.5rem;
-  margin: 12px;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
+  margin-top: 4px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -18,14 +29,14 @@ div.btn {
   transform: translateY(-4px);
   transition: 0.08s;
 }
-div.btn:hover {
+div.btn:hover, div.btn:focus {
   transform: translateY(0);
 }
 div.btn-primary {
   background: #4951ff;
   box-shadow: 0 4px #242875;
 }
-div.btn-primary:hover {
+div.btn-primary:hover, div.btn-primary:focus {
   background: #242875;
   box-shadow: 0 0 #242875;
 }
@@ -33,7 +44,7 @@ div.btn-red {
   background: #dc3545;
   box-shadow: 0 4px #921925;
 }
-div.btn-red:hover {
+div.btn-red:hover, div.btn-red:focus {
   background: #921925;
   box-shadow: 0 0 #921925;
 }
@@ -41,7 +52,7 @@ div.btn-orange {
   background: #fd7e14;
   box-shadow: 0 4px #aa4e01;
 }
-div.btn-orange:hover {
+div.btn-orange:hover, div.btn-orange:focus {
   background: #aa4e01;
   box-shadow: 0 0 #aa4e01;
 }
@@ -49,7 +60,7 @@ div.btn-yellow {
   background: #ffc107;
   box-shadow: 0 4px #a07800;
 }
-div.btn-yellow:hover {
+div.btn-yellow:hover, div.btn-yellow:focus {
   background: #a07800;
   box-shadow: 0 0 #a07800;
 }
@@ -57,7 +68,7 @@ div.btn-green {
   background: #198754;
   box-shadow: 0 4px #09311e;
 }
-div.btn-green:hover {
+div.btn-green:hover, div.btn-green:focus {
   background: #09311e;
   box-shadow: 0 0 #09311e;
 }
@@ -65,7 +76,7 @@ div.btn-teal {
   background: #20c997;
   box-shadow: 0 4px #127155;
 }
-div.btn-teal:hover {
+div.btn-teal:hover, div.btn-teal:focus {
   background: #127155;
   box-shadow: 0 0 #127155;
 }
@@ -73,7 +84,7 @@ div.btn-cyan {
   background: #0da8f0;
   box-shadow: 0 4px #08648f;
 }
-div.btn-cyan:hover {
+div.btn-cyan:hover, div.btn-cyan:focus {
   background: #08648f;
   box-shadow: 0 0 #08648f;
 }
@@ -81,7 +92,7 @@ div.btn-blue {
   background: #0d6efd;
   box-shadow: 0 4px #0143a3;
 }
-div.btn-blue:hover {
+div.btn-blue:hover, div.btn-blue:focus {
   background: #0143a3;
   box-shadow: 0 0 #0143a3;
 }
@@ -89,7 +100,7 @@ div.btn-purple {
   background: #6610f2;
   box-shadow: 0 4px #3d0894;
 }
-div.btn-purple:hover {
+div.btn-purple:hover, div.btn-purple:focus {
   background: #3d0894;
   box-shadow: 0 0 #3d0894;
 }
@@ -97,7 +108,7 @@ div.btn-pink {
   background: #d63384;
   box-shadow: 0 4px #881b51;
 }
-div.btn-pink:hover {
+div.btn-pink:hover, div.btn-pink:focus {
   background: #881b51;
   box-shadow: 0 0 #881b51;
 }
@@ -105,7 +116,7 @@ div.btn-black {
   background: #111;
   box-shadow: 0 4px #000;
 }
-div.btn-black:hover {
+div.btn-black:hover, div.btn-black:focus {
   background: #000;
   box-shadow: 0 0 #000;
 }
@@ -113,7 +124,7 @@ div.btn-white {
   background: #fff;
   box-shadow: 0 4px #bbb;
 }
-div.btn-white:hover {
+div.btn-white:hover, div.btn-white:focus {
   background: #bbb;
   box-shadow: 0 0 #bbb;
 }
@@ -121,10 +132,10 @@ div.btn-gray {
   background: #6c757d;
   box-shadow: 0 4px #343a40;
 }
-div.btn-gray:hover {
+div.btn-gray:hover, div.btn-gray:focus {
   background: #343a40;
   box-shadow: 0 0 #343a40;
 }
-div.btn-yellow, div.btn-white {
+div.btn-yellow, div.btn-white, div.btn-teal {
   color: black;
 }/*# sourceMappingURL=buttons.css.map */

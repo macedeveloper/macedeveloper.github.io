@@ -23,6 +23,11 @@
   padding: 0;
   scrollbar-color: #d4d6fb black;
 }
+@media only screen and (max-width: 800px) {
+  :root {
+    font-size: 20px;
+  }
+}
 
 *::-moz-selection {
   background-color: #4951ff;
@@ -35,6 +40,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  color: white;
 }
 
 p {
@@ -44,23 +50,44 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: white;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h1 {
   font-size: 64px;
 }
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 56px;
+  }
+}
 
 h2 {
   font-size: 48px;
+}
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 h3 {
   font-size: 36px;
 }
+@media only screen and (max-width: 800px) {
+  h3 {
+    font-size: 28px;
+  }
+}
 
 h4, h5, h6 {
   font-size: 32px;
+}
+@media only screen and (max-width: 800px) {
+  h4, h5, h6 {
+    font-size: 24px;
+  }
 }
 
 a {
@@ -77,20 +104,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100dvh;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.flex-row * {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
 }
 
 img.icon {

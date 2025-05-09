@@ -10,7 +10,7 @@
   perspective: 1000px;
   will-change: transform;
 }
-.background::before, .background::after, .background > div {
+.background > div {
   content: "";
   position: absolute;
   top: 0;
@@ -21,11 +21,7 @@
   backface-visibility: hidden;
   will-change: transform;
 }
-.background::before {
-  background: #000;
-  z-index: -150;
-}
-.background::after {
+.background > div:nth-child(1) {
   z-index: -140;
   background-image: url("/assets/images/checker.svg");
   background-size: 250px 250px;
@@ -33,7 +29,7 @@
   transform-origin: center;
   animation: moveLeft 100s linear infinite;
 }
-.background > div:first-child {
+.background > div:nth-child(2) {
   z-index: -130;
   background-image: url("/assets/images/halftone.svg");
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
@@ -43,24 +39,27 @@
   background-size: auto 100%;
   animation: moveLeft 60s linear infinite;
 }
-.background > div:nth-child(2) {
+.background > div:nth-child(3) {
   z-index: -120;
   background-image: url("/assets/images/wave.svg");
   height: 30vh;
   animation: moveLeftWave 30s linear infinite;
 }
-.background > div:nth-child(3) {
+.background > div:nth-child(4) {
   z-index: -110;
   background-image: url("/assets/images/wave.svg");
   height: 15vh;
   animation: moveLeftWave 15s linear infinite;
 }
-.background > div:nth-child(2), .background > div:nth-child(3) {
+.background > div:nth-child(3), .background > div:nth-child(4) {
   background-repeat: repeat-x;
   background-size: auto 100%;
   background-position: bottom;
   top: auto;
   bottom: 0;
+}
+.background > img {
+  animation: floating 8s ease-in-out infinite;
 }
 
 @keyframes moveLeft {
@@ -79,11 +78,22 @@
     transform: translateX(-50%) scale(2);
   }
 }
+@keyframes floating {
+  0% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+}
 @media (max-width: 768px) {
   .background {
     animation: none !important;
   }
-  .background::after, .background > div {
+  .background > div {
     animation: none !important;
     transform: rotate(0) scale(1) !important;
   }

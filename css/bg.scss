@@ -12,8 +12,6 @@
     perspective: 1000px;
     will-change: transform;
 
-    &::before,
-    &::after,
     &>div {
         content: '';
         position: absolute;
@@ -26,12 +24,8 @@
         will-change: transform;
     }
 
-    &::before {
-        background: #000;
-        z-index: -150;
-    }
 
-    &::after {
+    &>div:nth-child(1) {
         z-index: -140;
         background-image: url('/assets/images/checker.svg');
         background-size: 250px 250px;
@@ -40,7 +34,7 @@
         animation: moveLeft 100s linear infinite;
     }
 
-    &>div:first-child {
+    &>div:nth-child(2) {
         z-index: -130;
         background-image: url('/assets/images/halftone.svg');
         mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
@@ -50,14 +44,14 @@
         animation: moveLeft 60s linear infinite;
     }
 
-    &>div:nth-child(2) {
+    &>div:nth-child(3) {
         z-index: -120;
         background-image: url('/assets/images/wave.svg');
         height: 30vh;
         animation: moveLeftWave 30s linear infinite;
     }
 
-    &>div:nth-child(3) {
+    &>div:nth-child(4) {
         z-index: -110;
         // '/assets/images/wave2.svg'
         background-image: url('/assets/images/wave.svg');
@@ -65,8 +59,8 @@
         animation: moveLeftWave 15s linear infinite;
     }
 
-    &>div:nth-child(2),
-    &>div:nth-child(3) {
+    &>div:nth-child(3),
+    &>div:nth-child(4) {
         background-repeat: repeat-x;
         background-size: auto 100%;
         background-position: bottom;
@@ -74,33 +68,33 @@
         bottom: 0;
     }
 
+    &>img {
+        animation: floating 8s ease-in-out infinite;
+    }
+
 }
 
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0) rotate(10deg) scale(2);
-    }
 
-    100% {
-        transform: translateX(-50%) rotate(10deg) scale(2);
-    }
+@keyframes moveLeft {
+    0% { transform: translateX(0) rotate(10deg) scale(2); }
+    100% { transform: translateX(-50%) rotate(10deg) scale(2); }
 }
 
 @keyframes moveLeftWave {
-    0% {
-        transform: translateX(50%) scale(2);
-    }
+    0% { transform: translateX(50%) scale(2); }
+    100% { transform: translateX(-50%) scale(2); }
+}
 
-    100% {
-        transform: translateX(-50%) scale(2);
-    }
+@keyframes floating {
+    0%      { transform: translateY(-10px) rotate(-5deg); }
+    50%     { transform: translateY(10px) rotate(5deg); }
+    100%    { transform: translateY(-10px) rotate(-5deg); }
 }
 
 @media (max-width: 768px) {
     .background {
         animation: none !important;
 
-        &::after,
         &>div {
             animation: none !important;
             transform: rotate(0) scale(1) !important;

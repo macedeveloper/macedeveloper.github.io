@@ -31,7 +31,7 @@
         background-size: 250px 250px;
         transform: rotate(10deg) scale(2);
         transform-origin: center;
-        animation: moveLeft 100s linear infinite;
+        animation: moveLeft 80s ease-in-out infinite;
     }
 
     &>div:nth-child(2) {
@@ -41,14 +41,14 @@
         transform: rotate(10deg) scale(2);
         transform-origin: center;
         background-size: auto 100%;
-        animation: moveLeft 60s linear infinite;
+        animation: moveLeft 60s ease-in-out infinite;
     }
 
     &>div:nth-child(3) {
         z-index: -120;
         background-image: url('/assets/images/wave.svg');
         height: 30vh;
-        animation: moveLeftWave 30s linear infinite;
+        animation: moveLeftWave 30s ease-in-out infinite;
     }
 
     &>div:nth-child(4) {
@@ -56,7 +56,7 @@
         // '/assets/images/wave2.svg'
         background-image: url('/assets/images/wave.svg');
         height: 15vh;
-        animation: moveLeftWave 15s linear infinite;
+        animation: moveLeftWave 20s ease-in-out infinite;
     }
 
     &>div:nth-child(3),
@@ -76,13 +76,15 @@
 
 
 @keyframes moveLeft {
-    0% { transform: translateX(0) rotate(10deg) scale(2); }
-    100% { transform: translateX(-50%) rotate(10deg) scale(2); }
+    0% { transform: translateX(30%) rotate(10deg) scale(2); }
+    50% { transform: translateX(-30%) rotate(10deg) scale(2); }
+    100% { transform: translateX(30%) rotate(10deg) scale(2); }
 }
 
 @keyframes moveLeftWave {
     0% { transform: translateX(50%) scale(2); }
-    100% { transform: translateX(-50%) scale(2); }
+    50% { transform: translateX(-50%) scale(2); }
+    100% { transform: translateX(50%) scale(2); }
 }
 
 @keyframes floating {

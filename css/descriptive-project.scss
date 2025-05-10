@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 descriptive-project {
     display: flex;
     align-items: center;
@@ -9,7 +11,7 @@ descriptive-project {
     flex-grow: 1;
 
     background: #0005;
-    border: 0.2em solid #0008;
+    border: $outline solid #0008;
 
     border-radius: 20px;
 

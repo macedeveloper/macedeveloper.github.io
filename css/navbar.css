@@ -53,6 +53,11 @@ nav .nav-sep {
   background-color: #2b2c38;
 }
 @media only screen and (max-width: 640px) {
+  nav .nav-sep {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
   nav {
     flex-wrap: wrap;
     width: calc(100vw - 20px);

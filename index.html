@@ -32,7 +32,8 @@
 
     <link rel="stylesheet" href="css/tooltip.css">
     <link rel="stylesheet" href="css/descriptive-project.css">
-    <link rel="stylesheet" href="css/arts-section.css">
+    <link rel="stylesheet" href="css/musicalbums.css">
+    <link rel="stylesheet" href="css/arts.css">
     
     <!-- Google Fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,8 +72,8 @@
         <!-- Separator: --> <div class="nav-sep has-cstt"></div>
         <div id="nav-games" class="nav-btn has-cstt" data-cstt="Мои игры"> <img src="assets/pageicons/controller.svg"> </div>
         <div id="nav-projects" class="nav-btn has-cstt" data-cstt="Мои проекты"> <img src="assets/pageicons/box.svg"> </div>
-        <div id="nav-arts" class="nav-btn has-cstt" data-cstt="Мои рисунки"> <img src="assets/pageicons/brush.svg"> </div>
         <div id="nav-music" class="nav-btn has-cstt" data-cstt="Моя музыка"> <img src="assets/pageicons/music-note-beamed.svg"> </div>
+        <div id="nav-arts" class="nav-btn has-cstt" data-cstt="Мои рисунки"> <img src="assets/pageicons/brush.svg"> </div>
 
         <!-- Disabled: -->
         <!-- <div id="nav-trivia" class="nav-btn"> <img src="assets/pageicons/question-circle.svg"> </div> -->
@@ -86,7 +87,7 @@
             <div class="flex-col flex-gap">
 
                 <div class="flex-row flex-gap">
-                    <div class="flex-col" style="flex: 200px; align-items: center;">
+                    <div class="flex-col" style="flex: 200px; align-items: center; justify-content: center;">
                         <img src="assets/logos/macedev.svg" alt="Logo" width="200px" id="main-page-logo">
                     </div>
 
@@ -139,15 +140,16 @@
                 </div>
 
                 <div>
-                    <div style="min-width: 50%; margin: 0; padding: 20px; border-radius: 20px; background-color: #0005;">
+                    <div style="min-width: 50%; margin: 0 auto; max-width: 880px; padding: 20px; border-radius: 20px; background-color: #0005;">
                         <p style="margin: 0; font-size: 1.2rem; color: white;"><b> <i class="bi bi-quote"></i> Цитата дня: </b></p>
                         <p id="quoteText" style="margin: 0;"></p>
                         <p id="quoteAuthor" style="margin: 0; text-align: right; opacity: 50%;"></p>
                     </div>
-
+                </div>
+                <div>
                     <p id="Footer-Copyright" style="opacity: 50%; text-align: center;">
                         <i class="bi bi-c-circle"></i>
-                        2018-<abbr title="Всегда нужно думать наперёд.">2038</abbr>
+                        2018-<span class="has-cstt" data-cstt="Всегда нужно думать наперёд ;)">2038</span>
                         Mace Dev (ранее: Mace Studios).
                         Все права защищены.
                     </p>
@@ -450,70 +452,140 @@
 
 
         <section class="tab" id="tab-music" style="text-align: center;">
-
-            <div class="flex-col" style="justify-content: center; flex: 1;">
-                <h2>
-                    <i class="bi bi-music-note-beamed"></i>
-                    Mace Dev
-                </h2>
-
-                <a class="btn" href="https://youtube.com/playlist?list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ" target="_blank">
-                    <div class="btn btn-red">
-                        <i class="bi bi-youtube"></i>
-                        Плейлист на YouTube
+        
+            <div class="flex-col flex-gap" style="width: 100%;">
+                <div class="flex-row flex-gap">
+        
+                    <div class="flex-col" style="justify-content: center; flex: 1; gap: 20px;">
+                        <h1>
+                            <i class="bi bi-music-note-beamed"></i>
+                            Mace Dev
+                        </h1>
+        
+                        <!-- <a class="btn" href="https://youtube.com/playlist?list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ"
+                            target="_blank">
+                            <div class="btn btn-red">
+                                <i class="bi bi-youtube"></i>
+                                Плейлист на YouTube
+                            </div>
+                        </a> -->
+                        <a class="btn" href="https://music.yandex.ru/artist/23564859" target="_blank">
+                            <div class="btn btn-black" style="color: #fed42b; width: 100%;">
+                                <img src="assets/branding/ya-music-color.svg" style="height: 1cap; display: inline-block;">
+                                Слушать на Яндекс Музыке
+                            </div>
+                        </a>
+                        <!-- <a class="btn" href="https://vk.com/artist/macedev" target="_blank">
+                            <div class="btn btn-blue">
+                                <i class="bi bi-soundwave"></i> Слушать в ВК
+                            </div>
+                        </a> -->
+                        <a class="btn" href="https://open.spotify.com/artist/3qpBKyXLiLtP4hakJy0mcA" target="_blank">
+                            <div class="btn btn-teal" style="color: black; width: 100%;">
+                                <i class="bi bi-spotify"></i> Слушать на Spotify
+                            </div>
+                        </a>
+                        <!-- <a class="btn" href="https://zvuk.com/artist/213163508" target="_blank">
+                            <div class="btn btn-black">
+                                <i class="bi bi-x"></i> Слушать в СберЗвуке
+                            </div>
+                        </a> -->
+                        <a class="btn" href="https://band.link/macedev" target="_blank">
+                            <div class="btn btn-red" style="width: 100%;">
+                                <i class="bi bi-x"></i> BandLink
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a class="btn" href="https://music.yandex.ru/artist/23564859" target="_blank">
-                    <div class="btn btn-black" style="color: #fed42b;">
-                        <img src="assets/branding/ya-music-color.svg" style="height: 1cap; display: inline-block;">
-                        Слушать на Яндекс
-                        Музыке
-                    </div>
-                </a>
-                <!-- <a class="btn" href="https://vk.com/artist/macedev" target="_blank">
-                        <div class="btn btn-blue">
-                            <i class="bi bi-soundwave"></i> Слушать в ВК
+        
+                    <div class="flex-col" style="justify-content: center; flex: 1;">
+                        <!-- Title -->
+                        <h2> <i class="bi bi-youtube"></i> Плейлист на YouTube </h2>
+                        <!-- YouTube -->
+                        <style>
+                            iframe.yt-embed {
+                                width: 560px;
+                                height: 315px;
+                                border-radius: 20px;
+                                background-color: black;
+                            }
+        
+                            @media (max-width: 840px) {
+                                iframe.yt-embed {
+                                    width: 256px;
+                                    height: 144px;
+                                }
+                            }
+                        </style>
+                        <div>
+                            <iframe class="embed yt-embed"
+                                src="https://www.youtube.com/embed/videoseries?si=als6LfhfIp0mg7ke&amp;list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                    </a> -->
-                <a class="btn" href="https://zvuk.com/artist/213163508" target="_blank">
-                    <div class="btn btn-black">
-                        <i class="bi bi-broadcast"></i> Слушать в СберЗвуке
                     </div>
-                </a>
-                <a class="btn" href="https://open.spotify.com/artist/3qpBKyXLiLtP4hakJy0mcA" target="_blank">
-                    <div class="btn btn-teal" style="color: black;">
-                        <i class="bi bi-spotify"></i> Слушать на Spotify
+        
+                </div>
+        
+                <div class="flex-col">
+
+                    <h1>
+                        Мои альбомы
+                    </h1>
+
+                    <div class="flex-row album-box">
+                        <a href="https://music.yandex.ru/album/34801514" class="album">
+                            <div class="album">
+                                <img src="assets/musicalbums/SillySongs.png" class="album-cover">
+                                <h3>Silly Songs</h3>
+                                <p>(5 треков)<br>01 фев. 2025</p>
+                            </div>
+                        </a>
+                        <a href="https://music.yandex.ru/album/35324792" class="album">
+                            <div class="album">
+                                <img src="assets/musicalbums/NewShooter.jpg" class="album-cover">
+                                <h3>New Shooter</h3>
+                                <p>(5 треков)<br>10 фев. 2025</p>
+                            </div>
+                        </a>
+                        <a href="https://music.yandex.ru/album/35202440" class="album">
+                            <div class="album">
+                                <img src="assets/musicalbums/BblWrld.png" class="album-cover">
+                                <h3>Bubble World</h3>
+                                <p>(6 треков)<br>05 фев. 2025</p>
+                            </div>
+                        </a>
+                        <a href="https://music.yandex.ru/album/35173162" class="album">
+                            <div class="album">
+                                <img src="assets/musicalbums/FrDest.png" class="album-cover">
+                                <h3>Freedom Destination</h3>
+                                <p>(Сингл)<br>28 янв. 2025</p>
+                            </div>
+                        </a>
+                        <a href="https://music.yandex.ru/album/34801514" class="album">
+                            <div class="album">
+                                <img src="assets/musicalbums/SSZone.jpg" class="album-cover">
+                                <h3>Snowy Summit Zone(s)</h3>
+                                <p>(feat. laytymiron) (Сингл)<br>31 дек. 2024</p>
+                            </div>
+                        </a>
+                        <!--
+                        <div class="album">
+                            <img src="assets/placeholder.png" class="album-cover">
+                            <h3>Заполнитель 1</h3>
+                            <p> не настоящий альбом</p>
+                        </div>
+                        <div class="album">
+                            <img src="assets/placeholder.png" class="album-cover">
+                            <h3>Заполнитель 2</h3>
+                            <p> не настоящий альбом</p>
+                        </div>
+                        -->
                     </div>
-                </a>
-            </div>
 
-            <div class="flex-col" style="justify-content: center; flex: 1;">
-                <!-- Title -->
-                <h2> Плейлист на YouTube </h2>
-                <!-- YouTube -->
-                <style>
-                    iframe.yt-embed {
-                        width: 640px;
-                        height: 360px;
-                        border-radius: 20px;
-                    }
-
-                    @media (max-width: 840px) {
-                        iframe.yt-embed {
-                            width: 256px;
-                            height: 144px;
-                        }
-                    }
-                </style>
-                <div>
-                    <iframe class="embed yt-embed"
-                        src="https://www.youtube.com/embed/videoseries?si=als6LfhfIp0mg7ke&amp;list=PLax8LqpZxaCgwlsobQ6Yx-P-wP2PMGFCQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-
+        
         </section>
 
 

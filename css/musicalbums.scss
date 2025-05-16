@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+
+$transition: 0.2s;
+$image-width: 240px;
+
+
+.album-box {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+
+    padding: 10px 1rem;
+    overflow-x: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent; // Firefox
+    -webkit-overflow-scrolling: touch; // Smooth scrolling momentum
+    overflow-y: hidden; // No vertical scrollbar
+
+    // Hide scrollbar on Webkit but keep functionality
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+    }
+
+    // Gradient fade at edges
+    mask-image: linear-gradient(to right,
+        transparent,
+        black 1rem,
+        black calc(100% - 1rem),
+        transparent);
+}
+
+.album {
+    flex: 0 0 auto;
+    width: $image-width;
+    transition: transform $transition ease;
+
+    &>.album-cover {
+        width: 100%;
+        height: $image-width;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        transition: all $transition ease;
+    }
+
+    &>h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+    }
+
+    &>p {
+        margin: 4px 0 0;
+        font-size: 0.85rem;
+        color: transparentize($text, 0.2);
+    }
+}
+
+// Change .album to target the anchor tag
+a.album {
+    display: block; // Make anchor behave like block element
+    text-decoration: none; // Remove underline
+    color: inherit; // Inherit text color
+
+    // Rest of your existing album styles...
+    flex: 0 0 auto;
+    width: $image-width;
+    transition: transform $transition ease;
+
+    &:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+}

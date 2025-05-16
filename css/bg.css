@@ -1,3 +1,9 @@
+.background > div {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .background {
   position: fixed;
   top: 0;

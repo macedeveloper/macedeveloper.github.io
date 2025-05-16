@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+.background > div {
+    user-select: none;
+}
+
 .background {
     position: fixed;
     top: 0;

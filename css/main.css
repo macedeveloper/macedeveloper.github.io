@@ -29,11 +29,17 @@
   }
 }
 
-*::-moz-selection {
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection {
   background-color: #4951ff;
 }
 
-*::selection {
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
   background-color: #4951ff;
 }
 

@@ -30,13 +30,10 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/bg.css">
 
-    <link rel="stylesheet" href="css/arts-section.css">
+    <link rel="stylesheet" href="css/tooltip.css">
     <link rel="stylesheet" href="css/descriptive-project.css">
-
-    <!-- Scripts -->
-    <script src="js/tabs.js"></script>
-    <script src="js/arts.js"></script>
-
+    <link rel="stylesheet" href="css/arts-section.css">
+    
     <!-- Google Fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,17 +67,16 @@
     </div>
 
     <nav>
-        <div id="nav-home" class="nav-btn active"> <img src="assets/pageicons/house.svg"> </div>
+        <div id="nav-home" class="nav-btn has-cstt active" data-cstt="Главная"> <img src="assets/pageicons/house.svg"> </div>
+        <!-- Separator: --> <div class="nav-sep has-cstt"></div>
+        <div id="nav-games" class="nav-btn has-cstt" data-cstt="Мои игры"> <img src="assets/pageicons/controller.svg"> </div>
+        <div id="nav-projects" class="nav-btn has-cstt" data-cstt="Мои проекты"> <img src="assets/pageicons/box.svg"> </div>
+        <div id="nav-arts" class="nav-btn has-cstt" data-cstt="Мои рисунки"> <img src="assets/pageicons/brush.svg"> </div>
+        <div id="nav-music" class="nav-btn has-cstt" data-cstt="Моя музыка"> <img src="assets/pageicons/music-note-beamed.svg"> </div>
+
+        <!-- Disabled: -->
         <!-- <div id="nav-trivia" class="nav-btn"> <img src="assets/pageicons/question-circle.svg"> </div> -->
         <!-- <div id="nav-contact" class="nav-btn"> <img src="assets/pageicons/person-lines-fill.svg"> </div> -->
-        <div class="nav-sep"></div>
-
-        <div id="nav-games" class="nav-btn"> <img src="assets/pageicons/controller.svg"> </div>
-        <div id="nav-projects" class="nav-btn"> <img src="assets/pageicons/box.svg"> </div>
-        <div id="nav-arts" class="nav-btn"> <img src="assets/pageicons/brush.svg"> </div>
-        <div id="nav-music" class="nav-btn"> <img src="assets/pageicons/music-note-beamed.svg"> </div>
-
-        
     </nav>
 
     <div class="container">
@@ -143,6 +139,12 @@
                 </div>
 
                 <div>
+                    <div style="min-width: 50%; margin: 0; padding: 20px; border-radius: 20px; background-color: #0005;">
+                        <p style="margin: 0; font-size: 1.2rem; color: white;"><b> <i class="bi bi-quote"></i> Цитата дня: </b></p>
+                        <p id="quoteText" style="margin: 0;"></p>
+                        <p id="quoteAuthor" style="margin: 0; text-align: right; opacity: 50%;"></p>
+                    </div>
+
                     <p id="Footer-Copyright" style="opacity: 50%; text-align: center;">
                         <i class="bi bi-c-circle"></i>
                         2018-<abbr title="Всегда нужно думать наперёд.">2038</abbr>
@@ -441,7 +443,7 @@
                     <img class="modal-content" id="modalImage">
                 </div>
 
-                <script src="scripts/arts.js"></script>
+                <script src="js/arts.js"></script>
 
             </div>
         </section>
@@ -523,6 +525,11 @@
 
 
     </div>
+
+
+    <!-- Scripts -->
+    <script src="js/tabs.js"></script>
+    <script src="js/random-quote.js"></script>
 
 </body>
 

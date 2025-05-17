@@ -1,18 +1,13 @@
 .image-container {
     max-width: 1280px;
     min-height: 100%;
-    padding: 40px;
-    margin: 1em auto;
-    border-radius: 20px;
-
-    background: #0005;
-    border: 0.2em solid #0008;
+    margin: 1rem auto;
 
     display: flex;
     flex-wrap: wrap;
     flex-grow: 0;
     justify-content: center;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 .clickable-image {
@@ -52,24 +47,23 @@
     margin: auto auto;
     display: block;
 
-    max-width: 80%; /* Width of the enlarged image */
-    max-height: 80%; /* Height of the enlarged image */
+    max-width: 90%; /* Width of the enlarged image */
+    max-height: 90%; /* Height of the enlarged image */
 
     top: 50%; /* Move to the middle vertically */
     position: relative;
     transform: translateY(-50%); /* Adjust position back by half its width and height */
 
-    box-shadow: 0 0 40px #000b;
+    box-shadow: 0 0 40px #000;
     border: 2px solid #fff;
 }
 
 /* Close 'X' button  */
 #modal-close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 30px;
+    right: 55px;
     color: white;
-    font-size: 40px;
-    /* font-weight: bold; */
+    font-size: 64px;
     cursor: pointer; /* Pointer cursor on hover */
 }

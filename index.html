@@ -72,15 +72,15 @@
     </div>
 
     <nav>
-        <div id="nav-home" class="nav-btn has-cstt active" data-cstt="Главная"> <img src="assets/pageicons/house.svg"> </div>
-        <!-- Separator: --> <div class="nav-sep"></div>
-        <div id="nav-games" class="nav-btn has-cstt" data-cstt="Мои игры"> <img src="assets/pageicons/controller.svg"> </div>
-        <div id="nav-projects" class="nav-btn has-cstt" data-cstt="Мои проекты"> <img src="assets/pageicons/box.svg"> </div>
-        <div id="nav-music" class="nav-btn has-cstt" data-cstt="Моя музыка"> <img src="assets/pageicons/music-note-beamed.svg"> </div>
-        <div id="nav-arts" class="nav-btn has-cstt" data-cstt="Мои рисунки"> <img src="assets/pageicons/brush.svg"> </div>
+        <div id="nav-home"     class="nav-btn has-cstt active" data-cstt="Главная"    > <img src="assets/pageicons/house.svg">             </div>
+        <!-- <div id="nav-about"    class="nav-btn has-cstt"        data-cstt="Обо мне"    > <img src="assets/pageicons/person-fill.svg">       </div> -->
+        <!-- Separator: --> <div class="nav-sep"> </div>
+        <div id="nav-games"    class="nav-btn has-cstt"        data-cstt="Мои игры"   > <img src="assets/pageicons/controller.svg">        </div>
+        <div id="nav-projects" class="nav-btn has-cstt"        data-cstt="Мои проекты"> <img src="assets/pageicons/box.svg">               </div>
+        <div id="nav-music"    class="nav-btn has-cstt"        data-cstt="Моя музыка" > <img src="assets/pageicons/music-note-beamed.svg"> </div>
+        <div id="nav-arts"     class="nav-btn has-cstt"        data-cstt="Мои рисунки"> <img src="assets/pageicons/brush.svg">             </div>
 
         <!-- Disabled tabs: -->
-        <!-- <div id="nav-trivia" class="nav-btn"> <img src="assets/pageicons/question-circle.svg"> </div> -->
         <!-- <div id="nav-contact" class="nav-btn"> <img src="assets/pageicons/person-lines-fill.svg"> </div> -->
     </nav>
 
@@ -91,8 +91,11 @@
             <div class="flex-col flex-gap">
 
                 <div class="flex-row flex-gap">
-                    <div class="flex-col" style="flex: 200px; align-items: center; justify-content: center;">
+                    <div class="flex-col" style="flex: 200px; align-items: center; justify-content: start; gap: 15px">
                         <img src="assets/logos/macedev.svg" alt="Logo" width="200px" id="main-page-logo">
+                        <div class="cute-panel" style="background-color: #2b2c38;"> <i class="bi bi-gender-male"></i> Мужской </div>
+                        <div class="cute-panel" style="background-color: #2b2c38;"> <i class="bi bi-calendar"></i>    17 лет  </div>
+                        <div class="cute-panel" style="background-color: #2b2c38;"> <i class="bi bi-cake2"></i>       2 мая   </div>
                     </div>
 
                     <div class="flex-col" style="flex-shrink: 2; align-items: start;">
@@ -119,8 +122,14 @@
                         </a>
 
                         <a class="btn" href="https://t.me/macedev" target="_blank">
-                            <div class="btn btn-blue" style="min-width: 200px;">
+                            <div class="btn btn-cyan" style="min-width: 200px;">
                                 <i class="bi bi-telegram"></i> Тг Канал
+                            </div>
+                        </a>
+
+                        <a class="btn" href="https://bsky.app/profile/macedev.bsky.social" target="_blank">
+                            <div class="btn btn-blue" style="min-width: 200px;">
+                                <i class="bi bi-bluesky"></i> Bluesky
                             </div>
                         </a>
 
@@ -174,13 +183,13 @@
 
             <div class="flex-col">
                 <!-- Header -->
-                <h1>Мои игровые проекты</h1>
+                <h1>Мои игры (я создал)</h1>
                 <div class="flex-rows">
                     <!-- The Ultimate Contest -->
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/tuc.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>The Ultimate Contest (TUC)</h3>
+                            <h3> <i class="md-e md-e-heartgreen"></i> The Ultimate Contest <span style="opacity: 40%;">(TUC)</span> </h3>
                             <p class="half-opacity">Многопользовательские соревнования! <br> Четыре игровых режима:
                                 Гонка,
                                 Бойня, Охота за шляпой и прятки</p>
@@ -195,7 +204,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/pcb5.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>PcBoy 5</h3>
+                            <h3> <i class="md-e md-e-heartorange"></i> PcBoy 5 </h3>
                             <p class="half-opacity">Экшен-платформер. <br> Графика и музыка в стиле игр 90-х годов
                                 (16-бит)
                             </p>
@@ -210,7 +219,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/pcb4.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>PcBoy800 4 (PcBoy 2024)</h3>
+                            <h3> <i class="md-e md-e-heartcyan"></i> PcBoy800 4 (PcBoy 2024) </h3>
                             <p class="half-opacity">PcBoy800 4 Обновлён в 2024! 16-битный платформер</p>
                             <!-- <p class="half-opacity">PcBoy800 4 Updated in 2024! 16-bit action platformer</p> -->
                             <a class="btn" href="https://bulava.itch.io/pcboy2024" target="_blank">
@@ -225,7 +234,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/cug.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>Cookie Ungain</h3>
+                            <h3> <i class="md-e md-e-heartbrown"></i> Cookie Ungain </h3>
                             <p class="half-opacity" id="Game-CUG-Desc">Локальная vs игра для двух игроков, в которой
                                 один игрок управляет клавиатурой <i class="bi bi-keyboard"></i> и пытается собрать
                                 печеньки до конца таймера, а
@@ -249,7 +258,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/dforce.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>Dynamic Force</h3>
+                            <h3> <i class="md-e md-e-heartyellow"></i> Dynamic Force </h3>
                             <p class="half-opacity" id="Game-DF-Desc">Мультиплеерные гоночки, вид сверху</p>
                             <!-- <p class="half-opacity" id="Game-DF-Desc">Top-down multiplayer racing game</p> -->
                             <a class="btn" href="https://www.newgrounds.com/portal/view/885110" target="_blank">
@@ -275,7 +284,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/nsn.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>New Shooter</h3>
+                            <h3> <i class="md-e md-e-heartgray"></i> New Shooter </h3>
                             <p class="half-opacity" id="Game-NSN-Desc"> Ретро хоррор шутер от 1-го лица (Игра-недоделыш)
                             </p>
                             <!-- <p class="half-opacity" id="Game-NSN-Desc"> FPS retro-styled horror (Unfinished) </p> -->
@@ -291,13 +300,13 @@
 
             <div class="flex-col">
                 <!-- Header -->
-                <h1>Старые игры</h1>
+                <h1> Старые игры </h1>
                 <div class="flex-rows">
                     <!-- YNPN -->
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/ynpn.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>Y.N.P.N. (Я.Н.П.Н.)</h3>
+                            <h3> <i class="md-e md-e-heartcyan"></i> Y.N.P.N. <span style="opacity: 40%;">(Я.Н.П.Н.)</span> </h3>
                             <p class="half-opacity">
                                 Многопользовательская игра в жанре гонки/песочницы. Приквел к "The Ultimate Contest"
                             </p>
@@ -317,7 +326,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/pcb2.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>PcBoy800 2</h3>
+                            <h3> <i class="md-e md-e-heartpurple"></i> PcBoy800 2 </h3>
                             <a class="btn" href="https://drive.google.com/file/d/1IZvzY6OzTdHk5GYuXTJpmEedrRwQoY8x/view?usp=sharing"
                                 target="_blank">
                                 <div class="btn btn-primary"> <i class="bi bi-download"></i> Последняя версия </div>
@@ -333,7 +342,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/pcbx.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3>PcBoy X</h3>
+                            <h3> <i class="md-e md-e-heartgray"></i> PcBoy X </h3>
                             <a class="btn" href="https://www.newgrounds.com/portal/view/820950" target="_blank">
                                 <div class="btn btn-primary">
                                     <i class="bi bi-globe2"></i> Играть на Newgrounds
@@ -359,7 +368,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/syrupwallpaper.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3 id="Game-Dem-Name"> Сборка Градиентных Обоев "Syrup" </h3>
+                            <h3 id="Game-Dem-Name"> <i class="md-e md-e-sparkles"></i> Сборка Градиентных Обоев "Syrup" </h3>
                             <p class="half-opacity" id="Game-Dem-Desc">
                                 Пак обоев в 4K качестве, которые я сделал для себя и решил поделиться с вами. <br>
                                 Версии на <i class="bi bi-pc-display"></i> ПК и <i class="bi bi-phone"></i> Телефон
@@ -375,7 +384,7 @@
                     <descriptive-project>
                         <img src="assets/projects/thumbnails/contestmoji.png" class="descriptive-project-icon">
                         <div class="name">
-                            <h3 id="Game-Dem-Name"> Контестмодзи <span style="opacity: 40%;">(Contestmoji)</span> </h3>
+                            <h3 id="Game-Dem-Name"> <i class="md-e md-e-catsmile"></i> Контестмодзи <span style="opacity: 40%;">(Contestmoji)</span> </h3>
                             <p class="half-opacity" id="Game-Dem-Desc">
                                 Набор из 100+ уникальных, плавных и смешных смайликов, которые я нарисовал для использования на всяких сайтах
                                 и в мессенджере телеграм
@@ -411,7 +420,7 @@
                         <img src="https://macestudios.ru/zevki-cards/cards/CardTemplate.svg"
                             class="descriptive-project-icon">
                         <div class="name">
-                            <h3 id="Game-Cards-Name">Карточки</h3>
+                            <h3 id="Game-Cards-Name"> Карточки </h3>
                             <p class="half-opacity" id="Game-Cards-Desc">Карточки, которые я сделал (по приколу) для некоторых моих друзей и знакомых </p>
 
                             <a class="btn" href="https://macestudios.ru/zevki-cards" target="_blank">
@@ -550,7 +559,7 @@
                         </a> -->
                         <a class="btn" href="https://band.link/macedev" target="_blank">
                             <div class="btn btn-red" style="width: 100%;">
-                                <i class="bi bi-x"></i> BandLink
+                                <i class="bi bi-star-fill"></i> BandLink
                             </div>
                         </a>
                     </div>
@@ -646,9 +655,25 @@
         </section>
 
 
-        <section class="tab" id="tab-trivia">
+        <section class="tab" id="tab-about">
             <div class="flex-col flex-gap" style="display: flex; flex-grow: 1;">
-                <img src="assets/placeholder.png" style="width: 100%;">
+                <!-- <img src="assets/placeholder.png" style="width: 100%;"> -->
+                
+                <!-- Header -->
+                <h1> Обо мне </h1>
+
+                <p> Прости, тут пока пусто <i class="md-e md-e-catpensive"></i> </p>
+
+                <!-- <div class="flex-row flex-gap">
+                    <div class="flex-col" style="display: flex; flex-grow: 1;">
+                        
+                    </div>
+                    <div class="flex-col" style="display: flex; flex-grow: 1;">
+
+                    </div>
+                </div> -->
+
+
             </div>
         </section>
 

@@ -40,10 +40,10 @@ nav .nav-btn.active {
   outline: solid 4px white;
 }
 nav .nav-btn.active:hover {
-  background-color: #7c82ff;
+  background-color: rgb(124, 129.7582417582, 255);
 }
 nav .nav-btn:hover {
-  background-color: #414355;
+  background-color: rgb(65.1515151515, 66.6666666667, 84.8484848485);
 }
 nav .nav-sep {
   width: 10px;

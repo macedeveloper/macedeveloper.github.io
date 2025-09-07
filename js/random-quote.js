@@ -27,9 +27,19 @@ const quotes = [
     ["Я всегда готов учиться, но мне не всегда нравится, когда меня учат.", "Уинстон Черчилль"],
     ["Свобода одного человека заканчивается там, где начинается свобода другого.", "М. Бакунин"],
 ];
+const EVILquotes = [
+    ["Я ЗЛОЙ!!!", "Я (злой)"],
+    ["Я ТЕБЯ СЪЕМ!!!", "Я (тебя съем)"],
+    ["БУХАХАХАХА!!!", "Я"],
+    ["Я ТЕБЯ НЕНАВИЖУ!!!", "Я (ненавижу (тебя))"],
+    ["Сейчас я позвоню своему старому знакомому злодейскому приспешнику", "Я"],
+    ["Udalu tebe real life", "VotIVsyaPetrushka"],
+    ["Математика может быть жестокой, но ты еще более жестокий!", "Я (жестокий)"],
+];
 
-const randIndex = Math.floor(Math.random() * quotes.length);
-const selected = quotes[randIndex];
+
+const randIndex = Math.floor(Math.random() * EVILquotes.length);
+const selected = EVILquotes[randIndex];
 
 document.getElementById("quoteText").innerHTML = selected[0];
 document.getElementById("quoteAuthor").innerHTML = '— ' + selected[1];

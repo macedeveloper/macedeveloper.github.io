@@ -33,12 +33,12 @@ div.btn:hover, div.btn:focus {
   transform: translateY(0);
 }
 div.btn-primary {
-  background: #4951ff;
-  box-shadow: 0 4px #242875;
+  background: #E6203B;
+  box-shadow: 0 4px #6C0F2C;
 }
 div.btn-primary:hover, div.btn-primary:focus {
-  background: #242875;
-  box-shadow: 0 0 #242875;
+  background: #6C0F2C;
+  box-shadow: 0 0 #6C0F2C;
 }
 div.btn-red {
   background: #dc3545;

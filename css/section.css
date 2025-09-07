@@ -12,9 +12,9 @@ section {
   margin: 0 auto;
   padding: 40px;
   display: none;
-  background-color: rgba(20, 20, 25, 0.8);
+  background-color: rgba(25, 20, 21, 0.8);
   border: none;
-  outline: 4px solid #2b2c38;
+  outline: 4px solid #382b2d;
   border-radius: 40px;
   width: clamp(0px, 1280px, 100vw - 80px);
   min-height: 240px;
@@ -22,7 +22,7 @@ section {
 }
 @media only screen and (max-width: 1360px) {
   section {
-    outline: 4px solid #2b2c38;
+    outline: 4px solid #382b2d;
     border-radius: 0px;
     flex-wrap: wrap;
   }
@@ -66,16 +66,3 @@ section.active {
   display: flex;
   gap: 40px;
 }/*# sourceMappingURL=section.css.map */
-
-
-.cute-panel {
-  display: flex;
-  flex-direction: row;
-  padding: 8px 16px;
-  background-color: #2b2c38;
-  color: #d4d6fb;
-  border-radius: 20px;
-  width: 160px;
-  gap: 8px;
-  font-weight: 600;
-}

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(() => {
                 // Update cstt data attribute
                 const clipboard_check_icon = '\uF28B';  // Hex escape
-                textElement.setAttribute('data-cstt', `Скопировано!`);
+                textElement.setAttribute('data-cstt', `Скопированы вирусы!`);
 
                 // Revert after 2 seconds
                 setTimeout(() => {

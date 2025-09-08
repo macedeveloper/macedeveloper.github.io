@@ -17,7 +17,7 @@
     object-fit: contain;
 
     cursor: pointer; /* Pointer cursor on hover */
-    /* border-radius: 10px; */
+    border-radius: 8px;
 }
 
 .commented p {

@@ -16,6 +16,8 @@ nav {
   outline: 4px solid #2b2c38;
   border-radius: 35px;
   z-index: 20;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 nav .nav-btn {
   width: 60px;

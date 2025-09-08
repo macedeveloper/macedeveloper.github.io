@@ -4,7 +4,7 @@
 
 $btn-depth: $outline;
 $transition-len: 0.08s;
-$darken: 20%;
+$darken: -50%;
 
 a.btn {
     color: white;
@@ -25,15 +25,15 @@ a.btn {
 $button-variants: (
     "primary": ($primary, $secondary),
 
-    "red": ($red, color.adjust($red, $lightness: -$darken)),
-    "orange": ($orange, color.adjust($orange, $lightness: -$darken)),
-    "yellow": ($yellow, color.adjust($yellow, $lightness: -$darken)),
-    "green": ($green, color.adjust($green, $lightness: -$darken)),
-    "teal": ($teal, color.adjust($teal, $lightness: -$darken)),
-    "cyan": ($cyan, color.adjust($cyan, $lightness: -$darken)),
-    "blue": ($blue, color.adjust($blue, $lightness: -$darken)),
-    "purple": ($purple, color.adjust($purple, $lightness: -$darken)),
-    "pink": ($pink, color.adjust($pink, $lightness: -$darken)),
+    "red": ($red, color.scale($red, $lightness: $darken)),
+    "orange": ($orange, color.scale($orange, $lightness: $darken)),
+    "yellow": ($yellow, color.scale($yellow, $lightness: $darken)),
+    "green": ($green, color.scale($green, $lightness: $darken)),
+    "teal": ($teal, color.scale($teal, $lightness: $darken)),
+    "cyan": ($cyan, color.scale($cyan, $lightness: $darken)),
+    "blue": ($blue, color.scale($blue, $lightness: $darken)),
+    "purple": ($purple, color.scale($purple, $lightness: $darken)),
+    "pink": ($pink, color.scale($pink, $lightness: $darken)),
 
     "black": (#111111, #000000),
     "white": (#ffffff, #bbbbbb),

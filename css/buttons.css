@@ -42,75 +42,75 @@ div.btn-primary:hover, div.btn-primary:focus {
 }
 div.btn-red {
   background: #dc3545;
-  box-shadow: 0 4px rgb(145.746835443, 25.253164557, 36.7974683544);
+  box-shadow: 0 4px rgb(116.3417721519, 20.1582278481, 29.3734177215);
 }
 div.btn-red:hover, div.btn-red:focus {
-  background: rgb(145.746835443, 25.253164557, 36.7974683544);
-  box-shadow: 0 0 rgb(145.746835443, 25.253164557, 36.7974683544);
+  background: rgb(116.3417721519, 20.1582278481, 29.3734177215);
+  box-shadow: 0 0 rgb(116.3417721519, 20.1582278481, 29.3734177215);
 }
 div.btn-orange {
   background: #fd7e14;
-  box-shadow: 0 4px rgb(169.5569620253, 77.9240506329, 1.4430379747);
+  box-shadow: 0 4px rgb(135.3481012658, 62.2025316456, 1.1518987342);
 }
 div.btn-orange:hover, div.btn-orange:focus {
-  background: rgb(169.5569620253, 77.9240506329, 1.4430379747);
-  box-shadow: 0 0 rgb(169.5569620253, 77.9240506329, 1.4430379747);
+  background: rgb(135.3481012658, 62.2025316456, 1.1518987342);
+  box-shadow: 0 0 rgb(135.3481012658, 62.2025316456, 1.1518987342);
 }
 div.btn-yellow {
   background: #ffc107;
-  box-shadow: 0 4px #a07800;
+  box-shadow: 0 4px rgb(131, 98.25, 0);
 }
 div.btn-yellow:hover, div.btn-yellow:focus {
-  background: #a07800;
-  box-shadow: 0 0 #a07800;
+  background: rgb(131, 98.25, 0);
+  box-shadow: 0 0 rgb(131, 98.25, 0);
 }
 div.btn-green {
   background: #198754;
-  box-shadow: 0 4px rgb(9.0625, 48.9375, 30.45);
+  box-shadow: 0 4px rgb(12.5, 67.5, 42);
 }
 div.btn-green:hover, div.btn-green:focus {
-  background: rgb(9.0625, 48.9375, 30.45);
-  box-shadow: 0 0 rgb(9.0625, 48.9375, 30.45);
+  background: rgb(12.5, 67.5, 42);
+  box-shadow: 0 0 rgb(12.5, 67.5, 42);
 }
 div.btn-teal {
   background: #20c997;
-  box-shadow: 0 4px rgb(17.991416309, 113.008583691, 84.8969957082);
+  box-shadow: 0 4px rgb(16, 100.5, 75.5);
 }
 div.btn-teal:hover, div.btn-teal:focus {
-  background: rgb(17.991416309, 113.008583691, 84.8969957082);
-  box-shadow: 0 0 rgb(17.991416309, 113.008583691, 84.8969957082);
+  background: rgb(16, 100.5, 75.5);
+  box-shadow: 0 0 rgb(16, 100.5, 75.5);
 }
 div.btn-cyan {
   background: #0da8f0;
-  box-shadow: 0 4px rgb(7.7588932806, 100.2687747036, 143.2411067194);
+  box-shadow: 0 4px rgb(6.5, 84, 120);
 }
 div.btn-cyan:hover, div.btn-cyan:focus {
-  background: rgb(7.7588932806, 100.2687747036, 143.2411067194);
-  box-shadow: 0 0 rgb(7.7588932806, 100.2687747036, 143.2411067194);
+  background: rgb(6.5, 84, 120);
+  box-shadow: 0 0 rgb(6.5, 84, 120);
 }
 div.btn-blue {
   background: #0d6efd;
-  box-shadow: 0 4px rgb(1.3442622951, 66.5409836066, 162.6557377049);
+  box-shadow: 0 4px rgb(1.0901639344, 53.9631147541, 131.9098360656);
 }
 div.btn-blue:hover, div.btn-blue:focus {
-  background: rgb(1.3442622951, 66.5409836066, 162.6557377049);
-  box-shadow: 0 0 rgb(1.3442622951, 66.5409836066, 162.6557377049);
+  background: rgb(1.0901639344, 53.9631147541, 131.9098360656);
+  box-shadow: 0 0 rgb(1.0901639344, 53.9631147541, 131.9098360656);
 }
 div.btn-purple {
   background: #6610f2;
-  box-shadow: 0 4px rgb(61.2857142857, 8.0476190476, 147.9523809524);
+  box-shadow: 0 4px rgb(50.6785714286, 6.6547619048, 122.3452380952);
 }
 div.btn-purple:hover, div.btn-purple:focus {
-  background: rgb(61.2857142857, 8.0476190476, 147.9523809524);
-  box-shadow: 0 0 rgb(61.2857142857, 8.0476190476, 147.9523809524);
+  background: rgb(50.6785714286, 6.6547619048, 122.3452380952);
+  box-shadow: 0 0 rgb(50.6785714286, 6.6547619048, 122.3452380952);
 }
 div.btn-pink {
   background: #d63384;
-  box-shadow: 0 4px rgb(135.7224489796, 27.2775510204, 81.1673469388);
+  box-shadow: 0 4px rgb(110.3265306122, 22.1734693878, 65.9795918367);
 }
 div.btn-pink:hover, div.btn-pink:focus {
-  background: rgb(135.7224489796, 27.2775510204, 81.1673469388);
-  box-shadow: 0 0 rgb(135.7224489796, 27.2775510204, 81.1673469388);
+  background: rgb(110.3265306122, 22.1734693878, 65.9795918367);
+  box-shadow: 0 0 rgb(110.3265306122, 22.1734693878, 65.9795918367);
 }
 div.btn-black {
   background: #111111;

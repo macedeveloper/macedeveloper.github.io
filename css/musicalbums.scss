@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use "sass:color";
 
 
 $transition: 0.2s;
@@ -64,7 +65,7 @@ $image-width: 240px;
     &>p {
         margin: 4px 0 0;
         font-size: 0.85rem;
-        color: transparentize($text, 0.2);
+        color: color.adjust($text, $alpha: -0.2);
     }
 }
 

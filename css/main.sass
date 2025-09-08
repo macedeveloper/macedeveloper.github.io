@@ -24,11 +24,16 @@
     // font-family: "Nunito Sans", sans-serif
     font-family: 'Nebula Sans', sans-serif
     font-size: 24px
-    @media only screen and (max-width: 800px)
-        font-size: 20px
     margin: 0
     padding: 0
     scrollbar-color: $text black
+
+    @media only screen and (max-width: 800px)
+        font-size: 20px
+
+*
+    corner-shape: squircle;
+    corner-shape: superellipse(1.5)
 
     
 p::selection,

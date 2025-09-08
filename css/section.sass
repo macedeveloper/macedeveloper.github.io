@@ -1,4 +1,5 @@
 @use 'variables' as *
+@use "sass:color";
 
 // Container
 .container
@@ -18,7 +19,7 @@ section
 
     display: none
 
-    background-color: transparentize($bg, 0.2)
+    background-color: color.adjust($bg, $alpha: -0.2)
     border: none
     outline: $outline solid $container-outline
     border-radius: 40px
@@ -63,3 +64,15 @@ section
 .flex-gap
     display: flex
     gap: 40px
+
+
+.cute-panel
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+    background-color: #2b2c38;
+    color: #d4d6fb;
+    border-radius: 20px;
+    width: 160px;
+    gap: 8px;
+    font-weight: 600;

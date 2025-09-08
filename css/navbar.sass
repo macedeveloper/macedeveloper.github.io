@@ -1,4 +1,5 @@
 @use 'variables' as *
+@use "sass:color";
 
 $btn-depth: $outline
 $transition-len: 0.08s
@@ -20,7 +21,7 @@ nav
     padding: 15px
     gap: 20px
 
-    background-color: transparentize($bg, 0.2)
+    background-color: color.adjust($bg, $alpha: -0.2)
     border: none
     outline: $outline solid $container-outline
     border-radius: 35px
@@ -47,15 +48,15 @@ nav
             height: 40px
 
         &.active
-            background-color: lighten($primary, 0%)
+            background-color: $primary
             // transform: translateY(-$btn-depth)
             outline: solid $outline white
 
             &:hover
-                background-color: lighten($primary, 10%)
+                background-color: color.adjust($primary, $lightness: 10%);
 
         &:hover
-            background-color: lighten($nav-button, 10%)
+            background-color: color.adjust($nav-button, $lightness: 10%);
 
     .nav-sep
         width: 10px

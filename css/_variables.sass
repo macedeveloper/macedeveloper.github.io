@@ -1,3 +1,5 @@
+@use "sass:color";
+    
 // Main colors
 $primary: #4951ff
 $secondary: #242875
@@ -6,7 +8,7 @@ $bg: #141419
 // $bg-dark: #141419
 // $bg-light: #1E1E26
 
-$container-bg: transparentize($bg, 0.15)
+$container-bg: color.adjust($bg, $alpha: -0.15)
 $container-outline: #2b2c38
 $nav-button: #2b2c38
 $outline: 4px

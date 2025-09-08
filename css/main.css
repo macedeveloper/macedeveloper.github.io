@@ -29,6 +29,11 @@
   }
 }
 
+* {
+  corner-shape: squircle;
+  corner-shape: superellipse(1.5);
+}
+
 p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection {
   background-color: #4951ff;
 }

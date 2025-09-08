@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use "sass:color";
+@use "sass:list";
 
 $btn-depth: $outline;
 $transition-len: 0.08s;
@@ -23,18 +25,18 @@ a.btn {
 $button-variants: (
     "primary": ($primary, $secondary),
 
-    "red": ($red, darken($red, $darken)),
-    "orange": ($orange, darken($orange, $darken)),
-    "yellow": ($yellow, darken($yellow, $darken)),
-    "green": ($green, darken($green, $darken)),
-    "teal": ($teal, darken($teal, $darken)),
-    "cyan": ($cyan, darken($cyan, $darken)),
-    "blue": ($blue, darken($blue, $darken)),
-    "purple": ($purple, darken($purple, $darken)),
-    "pink": ($pink, darken($pink, $darken)),
+    "red": ($red, color.adjust($red, $lightness: -$darken)),
+    "orange": ($orange, color.adjust($orange, $lightness: -$darken)),
+    "yellow": ($yellow, color.adjust($yellow, $lightness: -$darken)),
+    "green": ($green, color.adjust($green, $lightness: -$darken)),
+    "teal": ($teal, color.adjust($teal, $lightness: -$darken)),
+    "cyan": ($cyan, color.adjust($cyan, $lightness: -$darken)),
+    "blue": ($blue, color.adjust($blue, $lightness: -$darken)),
+    "purple": ($purple, color.adjust($purple, $lightness: -$darken)),
+    "pink": ($pink, color.adjust($pink, $lightness: -$darken)),
 
-    "black": (#111, #000),
-    "white": (#fff, #bbb),
+    "black": (#111111, #000000),
+    "white": (#ffffff, #bbbbbb),
     "gray": ($bs-gray, $bs-gray-800),
 );
 
@@ -65,9 +67,9 @@ div.btn {
 
     // Generate button variants
     @each $name, $colors in $button-variants {
-        $color: nth($colors, 1);
-        $shadow: nth($colors, 2);
-
+        $color: list.nth($colors, 1);
+        $shadow: list.nth($colors, 2);
+        
         &-#{$name} {
             background: $color;
             box-shadow: 0 $btn-depth $shadow;

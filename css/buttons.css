@@ -113,20 +113,20 @@ div.btn-pink:hover, div.btn-pink:focus {
   box-shadow: 0 0 rgb(135.7224489796, 27.2775510204, 81.1673469388);
 }
 div.btn-black {
-  background: #111;
-  box-shadow: 0 4px #000;
+  background: #111111;
+  box-shadow: 0 4px #000000;
 }
 div.btn-black:hover, div.btn-black:focus {
-  background: #000;
-  box-shadow: 0 0 #000;
+  background: #000000;
+  box-shadow: 0 0 #000000;
 }
 div.btn-white {
-  background: #fff;
-  box-shadow: 0 4px #bbb;
+  background: #ffffff;
+  box-shadow: 0 4px #bbbbbb;
 }
 div.btn-white:hover, div.btn-white:focus {
-  background: #bbb;
-  box-shadow: 0 0 #bbb;
+  background: #bbbbbb;
+  box-shadow: 0 0 #bbbbbb;
 }
 div.btn-gray {
   background: #6c757d;

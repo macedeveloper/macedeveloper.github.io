@@ -65,8 +65,7 @@ section.active {
 .flex-gap {
   display: flex;
   gap: 40px;
-}/*# sourceMappingURL=section.css.map */
-
+}
 
 .cute-panel {
   display: flex;
@@ -78,4 +77,4 @@ section.active {
   width: 160px;
   gap: 8px;
   font-weight: 600;
-}
+}/*# sourceMappingURL=section.css.map */

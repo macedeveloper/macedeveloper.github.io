@@ -29,8 +29,14 @@ const quotes = [
     ["Арабская лигатура Бисмиллах Ар-Рахман Ар-Рахим ﷽", "Unicode Consortium"],
 ];
 
-const randIndex = Math.floor(Math.random() * quotes.length);
-const selected = quotes[randIndex];
+const quotes2 = [
+
+    ["ВЕРНИТЕ В РОССИЮ СВОБОДНЫЙ ИНТЕРНЕТ! 🇷🇺 @", ""],
+
+];
+
+const randIndex = Math.floor(Math.random() * quotes2.length);
+const selected = quotes2[randIndex];
 
 document.getElementById("quoteText").innerHTML = '«' + selected[0] + '»';
 document.getElementById("quoteAuthor").innerHTML = '— ' + selected[1];

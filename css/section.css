@@ -16,8 +16,6 @@ section {
   border: none;
   outline: 4px solid #2b2c38;
   border-radius: 40px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
   width: clamp(0px, 1280px, 100vw - 80px);
   min-height: 240px;
   gap: 40px;

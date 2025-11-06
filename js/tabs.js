@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Проверяем хэш в URL при загрузке страницы
-    // let hash = window.location.hash;
-    // if (hash) {
-    //     const tabId = `tab-${hash.slice(1)}`; // Преобразуем хэш в ID вкладки
-    //     activateTab(tabId);
-    // } else {
-    //     // Если хэша нет, активируем первую вкладку по умолчанию
-    //     activateTab('tab-home');
-    // }
+    let hash = window.location.hash;
+    if (hash) {
+        const tabId = `tab-${hash.slice(1)}`; // Преобразуем хэш в ID вкладки
+        activateTab(tabId);
+    } else {
+        // Если хэша нет, активируем первую вкладку по умолчанию
+        activateTab('tab-home');
+    }
 
     // Добавляем обработчики событий для вкладок
     navbtns.forEach(tab => {

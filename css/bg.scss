@@ -50,7 +50,7 @@
 
     &>div:nth-child(3) {
         z-index: -120;
-        background-image: url('/assets/images/wave.svg');
+        background-image: url('/assets/images/wave_snow.svg');
         height: 30vh;
         animation: moveLeftWave 30s ease-in-out infinite;
     }
@@ -58,7 +58,7 @@
     &>div:nth-child(4) {
         z-index: -110;
         // '/assets/images/wave2.svg'
-        background-image: url('/assets/images/wave.svg');
+        background-image: url('/assets/images/wave_snow.svg');
         height: 15vh;
         animation: moveLeftWave 20s ease-in-out infinite;
     }

@@ -3,6 +3,7 @@ const quotes = [
     // Друзья
     ["Сейчас я позвоню своему старому знакомому Мистеру Интернету", "Айдар Ы."],
     ["Udalite mne real life", "VotTakiePirogi"],
+    ["хайпует плесень", "VotTakiePirogi"],
     // ["УРАААААА ТУТ ПАНКИ", "Мэдал"],
     ["ccccccccccccccccccc", "LaytyMiron"],
 

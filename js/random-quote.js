@@ -34,6 +34,7 @@ const quotes = [
     ["Rocky Grace Save Stars", "Проект «Аве Мария», Энди Вейер"],
     ["Amaze! Amaze! Amaze!", "Проект «Аве Мария», Энди Вейер"],
     ["Bakunawa will rise", "Freedom Planet 2"],
+    ["Big call! Because the panda is big!", "Freedom Planet (bloopers)"],
     ["Press on the seventh beat no matter what!", "Rhythm Doctor"],
     // ["Eight!", "Rhythm Doctor"],
     ["Blood is fuel.", "ULTRAKILL"],

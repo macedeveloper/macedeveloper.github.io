@@ -1,3 +1,15 @@
+// 
+// 
+// 
+// 
+// 
+// Ай-ай-ай, спойлеришь себе!!!
+// 
+// 
+// 
+// 
+// 
+
 const QUOTES = [
     // Me and people i call "friends"
     "На карман не намажешь", // me
@@ -48,7 +60,8 @@ const QUOTES = [
     "Bakunawa will rise", // Freedom Planet 2
     "Press on the 7th beat no matter what!", // Rhythm Doctor
     "Eight!", // Rhythm Doctor
-    "I ****ing love air-conditioning.", // OMORI
+    "I ******* love air-conditioning.", // OMORI
+    "Oh, if you could only love!", // Rubato
     
     // Other
     "↑←✓€→®™—ѣ²ѵіѳ′[§°£₽„“³$‰∞”¹‘×©↓ß«", // Ilya Birman
@@ -66,7 +79,7 @@ function randomFromDate(random_range = 1, date = new Date()) {
 
     switch (seedStr) {
         case "2026-05-02":
-            var out = random_range - 0
+            var out = random_range + 0
             console.log(seedStr, out)
             return out;
         

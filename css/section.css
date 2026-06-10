@@ -36,15 +36,36 @@ section.active {
 }
 
 #main-page-logo {
-  transition: transform 0.5s;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
 }
-#main-page-logo:hover {
+#main-page-logo * {
+  transition: 0.6s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+#main-page-logo:hover #main-page-logo-part-wand {
   transform: rotate(1turn);
 }
+#main-page-logo:hover #main-page-logo-part-border {
+  animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .flex-row {
   display: flex;
   flex-direction: row;

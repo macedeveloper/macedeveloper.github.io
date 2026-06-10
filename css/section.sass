@@ -1,5 +1,5 @@
 @use 'variables' as *
-@use "sass:color";
+@use "sass:color"
 
 // Container
 .container
@@ -42,11 +42,32 @@ section
     flex-grow: 0
 
 #main-page-logo
-    transition: transform 0.5s
     user-select: none
+    position: relative
+    width: 200px
+    height: 200px
 
+    *
+        transition: 0.6s
+        position: absolute
+        top: 0
+        left: 0
+        width: 200px
+        height: 200px
+    
     &:hover
-        transform: rotate(1turn)
+        #main-page-logo-part-wand
+            transform: rotate(1turn)
+        #main-page-logo-part-border
+            animation: spin 1s linear infinite
+
+
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
+
 
 // flex-row & flex-col
 .flex-row
@@ -65,14 +86,13 @@ section
     display: flex
     gap: 40px
 
-
 .cute-panel
-    display: flex;
-    flex-direction: row;
-    padding: 8px 16px;
-    background-color: #2b2c38;
-    color: #d4d6fb;
-    border-radius: 20px;
-    width: 160px;
-    gap: 8px;
-    font-weight: 600;
+    display: flex
+    flex-direction: row
+    padding: 8px 16px
+    background-color: #2b2c38
+    color: #d4d6fb
+    border-radius: 20px
+    width: 160px
+    gap: 8px
+    font-weight: 600

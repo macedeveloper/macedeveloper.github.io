@@ -44,6 +44,8 @@ const QUOTES = [
     "5 минут — полёт нормальный!", // M&tB
     "Набираем номерок...", // M&tB
     "Ура, ещё один ремонт!", // M&tB
+    "I didn't know you could play the piano", // tADC
+    "I only know like two songs", // tADC
     
     // Books
     "2 + 2 = 5", // 1984, George Orwell
@@ -67,7 +69,7 @@ const QUOTES = [
     "↑←✓€→®™—ѣ²ѵіѳ′[§°£₽„“³$‰∞”¹‘×©↓ß«", // Ilya Birman
     "Арабская лигатура Бисмиллах Ар-Рахман Ар-Рахим  ﷽", // Unicode Consortium
     "‧₊˚♪𝄞࿐₊˚⊹", // kaomoji
-    "Сегодня без цитаты.", // meta
+    "Сегодня без цитаты.", // meta-quote
 
     // Special
     "С ДНЁМ РОЖДЕНИЯ!!!",

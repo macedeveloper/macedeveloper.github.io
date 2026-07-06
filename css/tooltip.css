@@ -19,6 +19,13 @@
   pointer-events: none;
   z-index: 100;
 }
+.has-cstt::after .has-cstt-bottom {
+  bottom: 0;
+  color: red;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+}
 .has-cstt::before {
   content: "";
   position: absolute;
@@ -34,6 +41,9 @@
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   pointer-events: none;
   z-index: 101;
+}
+.has-cstt::before .has-cstt-bottom {
+  bottom: calc(100% + 12px + 3px - 10px);
 }
 .has-cstt:hover::after {
   opacity: 1 !important;
